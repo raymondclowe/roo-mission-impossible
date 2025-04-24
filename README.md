@@ -1,6 +1,10 @@
 # roo-mission-impossible
 A Roo Code based system to do tasks, using the Mission Impossible team building strategy
 
+# Installation for humans (Roo Code ignore this)
+
+Cut and paste the Step 1 below into a new Roo Code task, that's it, the next steps should be automatic.
+
 ## Your instructions
 
 You are Roo Code and you will follow these instructions.
