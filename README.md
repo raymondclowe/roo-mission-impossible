@@ -9,7 +9,7 @@ Cut and paste the Step 1 below into a new Roo Code task. The subsequent steps sh
 
 You are Roo Code, and you will follow these instructions step by step. For each step:
 1. Complete the task.
-2. After each task is completed use the diff tool to remove that entire step from the markdown file
+2. After each task is completed, use the diff tool to remove that entire step from the markdown file.
 
 ---
 
@@ -27,31 +27,42 @@ After downloading, use `read_file` to verify that the file has been downloaded s
 
 ---
 
-### [ ] Step 2. Set up Mr. Phelps
+### [ ] Step 2. Set up the Project Memory System and Mr. Phelps
 
-Check for the existence of a `.roomodes` file:
-- If the file does not exist, create it with an empty JSON structure: `{ "customModes": [] }`.
-- If the file exists, read its contents and parse it as JSON. Validate that the `customModes` key exists and is an array. If not, initialize it as an empty array.
+1. **Set up the Project Memory System**:
+   - Create a hidden folder named `.memory` at the root of the project.
+   - Download the `memory-system-rules.md` file into the `.memory` folder using the following command:
 
-Next, locate or create the `jim-phelps` mode within the `customModes` array:
-- If an entry with the slug `jim-phelps` already exists, update it to match the following definition:
-- If no such entry exists, append the following object to the `customModes` array:
+   ```bash
+   curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/memory-system-rules.md > .memory/memory-system-rules.md
+   ```
 
-Get the Mr Phelps definition like this:
+   - Inside the `.memory` folder, create the following markdown files:
+     - `table-of-contents.md`: An overview and quick access to all memory files.
+     - `state.md`: Tracks what has been done, what is in progress, and what remains to be done.
+     - `learnings.md`: Documents key insights, challenges faced, and solutions implemented.
+     - `references.md`: Contains links to relevant documents, research, or external resources.
+   - Follow the file naming standards outlined in the `memory-system-rules.md` file.
+   - Ensure all team members are familiar with the memory system rules and their responsibilities.
 
-```
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json
-```
+2. **Set up Mr. Phelps**:
+   - Check for the existence of a `.roomodes` file:
+     - If the file does not exist, create it with an empty JSON structure: `{ "customModes": [] }`.
+     - If the file exists, read its contents and parse it as JSON. Validate that the `customModes` key exists and is an array. If not, initialize it as an empty array.
+   - Download the latest `jim-phelps-details.json` file using the following command:
 
-Then integrating that into `.roomodes`.
+   ```bash
+   curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json > jim-phelps-details.json
+   ```
 
-Ensure that the `roleDefinition` field is included and matches exactly as specified above. Save the updated `.roomodes` file.
-
-**Validation**: After saving, re-read the `.roomodes` file and confirm that the `mr-phelps` entry is correctly added or updated.
+   - Ensure the file is saved in the root directory of the project.
+   - Verify that the file contains valid JSON and includes the `jim-phelps` mode definition.
+   - Integrate the `jim-phelps` mode into the `.roomodes` file by appending or updating the `customModes` array with the content from `jim-phelps-details.json`.
+   - Save the updated `.roomodes` file and validate its structure.
 
 ---
 
-### [ ] Step 3. Tell User setup us Completed and they should now talk to Mr Phelps about their task.
+### [ ] Step 3. Confirm Setup Completion
 
 Output a message to the user indicating that the setup is complete. For example:
 
@@ -59,39 +70,5 @@ Output a message to the user indicating that the setup is complete. For example:
 Setup complete! The 'jim-phelps' mode has been successfully configured in the .roomodes file and awaits your instructions.
 ```
 
-Then switch to the jim-phelps mode.
-
----
-
-### Additional Notes for Debugging and Validation
-
-1. **File Existence Check**: Before reading or writing any file, always check if the file exists and handle errors gracefully.
-2. **JSON Parsing**: Ensure that the `.roomodes` file is valid JSON before attempting to modify it. If invalid, create a new file with the correct structure.
-3. **Role Definition**: Double-check that the `roleDefinition` field is included and matches the provided text.
-4. **Error Reporting**: If any step fails, provide clear error messages to help diagnose the issue.
-
-# Setup Instructions
-
-## Setting Up the Project Memory System
-
-1. Create a hidden folder named `.memory` at the root of the project.
-2. Inside the `.memory` folder, create the following markdown files:
-   - `table-of-contents.md`: An overview and quick access to all memory files.
-   - `state.md`: Tracks what has been done, what is in progress, and what remains to be done.
-   - `learnings.md`: Documents key insights, challenges faced, and solutions implemented.
-   - `references.md`: Contains links to relevant documents, research, or external resources.
-3. Follow the file naming standards outlined in the `memory-system-rules.md` file.
-4. Ensure all team members are familiar with the memory system rules and their responsibilities.
-
-## Setting Up Mr. Phelps
-
-1. Download the latest `jim-phelps-details.json` file using the following command:
-
-```bash
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json > jim-phelps-details.json
-```
-
-2. Ensure the file is saved in the root directory of the project.
-3. Verify that the file contains valid JSON and includes the `jim-phelps` mode definition.
-4. Follow the instructions in the `roleDefinition` field of the `jim-phelps` mode to configure and use Mr. Phelps effectively.
+Then switch to the `jim-phelps` mode to begin task delegation.
 
