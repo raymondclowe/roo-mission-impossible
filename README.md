@@ -1,15 +1,3 @@
-To improve the instructions and ensure they work as intended, we need to address several key issues:
-
-1. **Clarity of Instructions**: The instructions should be more explicit and step-by-step to avoid ambiguity.
-2. **Error Handling**: Include steps to handle potential errors (e.g., file not found, incorrect JSON format).
-3. **Validation**: Add steps to validate the output after each task to ensure correctness.
-4. **Description Inclusion**: Ensure that the description (`roleDefinition`) is included in the `.roomodes` file.
-5. **Automation Logic**: Clarify how tasks are created and executed sequentially.
-
-Here’s the revised version of your instructions:
-
----
-
 # roo-mission-impossible
 A Roo Code-based system to perform tasks using the Mission Impossible team-building strategy.
 
@@ -89,6 +77,3 @@ Setup complete! The 'mr-phelps' mode has been successfully configured in the .ro
 3. **Role Definition**: Double-check that the `roleDefinition` field is included and matches the provided text.
 4. **Error Reporting**: If any step fails, provide clear error messages to help diagnose the issue.
 
----
-
-By following these revised instructions, the process should work reliably and produce the desired outcome. Each step is designed to minimize ambiguity and ensure proper execution.
