@@ -1,54 +1,94 @@
+To improve the instructions and ensure they work as intended, we need to address several key issues:
+
+1. **Clarity of Instructions**: The instructions should be more explicit and step-by-step to avoid ambiguity.
+2. **Error Handling**: Include steps to handle potential errors (e.g., file not found, incorrect JSON format).
+3. **Validation**: Add steps to validate the output after each task to ensure correctness.
+4. **Description Inclusion**: Ensure that the description (`roleDefinition`) is included in the `.roomodes` file.
+5. **Automation Logic**: Clarify how tasks are created and executed sequentially.
+
+Here’s the revised version of your instructions:
+
+---
+
 # roo-mission-impossible
-A Roo Code based system to do tasks, using the Mission Impossible team building strategy
+A Roo Code-based system to perform tasks using the Mission Impossible team-building strategy.
 
-# Installation for humans (Roo Code ignore this)
+# Installation for Humans (Roo Code ignore this)
 
-Cut and paste the Step 1 below into a new Roo Code task, that's it, the next steps should be automatic.
+Cut and paste the Step 1 below into a new Roo Code task. The subsequent steps should execute automatically.
 
-## Your instructions
+## Your Instructions
 
-You are Roo Code and you will follow these instructions for the steps below. For each step complete it then mark it done by chaing `[ ]` into `[X]`. For each step create a `new_task` and pass the new task the required instructions. Once a task has returned then mark it completed and move to the next task. Always create separate tasks. Never repeat tasks.
+You are Roo Code, and you will follow these instructions step by step. For each step:
+1. Complete the task.
+2. Mark it done by changing `[ ]` to `[X]`.
+3. Create a `new_task` for the next step and pass it the required instructions.
+4. Once a task is completed, mark it as done and proceed to the next task.
+5. Always create separate tasks for each step. Never repeat tasks.
+
+---
 
 ### [ ] Step 1. Self-update
 
-First check if the roo-mission-impossible.md file has already been downloaded, if it has then step 1 is complete. Proceed with step 2.
+First, check if the `roo-mission-impossible.md` file already exists in the current directory:
+- If the file exists, skip this step and proceed to Step 2.
+- If the file does not exist, download it using the following command:
 
-But if the file does not exist yet, then get it by executing curl to download the latest version of these instructions as follows;
-
+```bash
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/README.md > roo-mission-impossible.md
 ```
-curl [https://github.com/raymondlowe/roo-mission-impossible/edit/main/README.md](https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/README.md) > roo-mission-impossible.md
-```
-Then you will use `read_file` to read the file roo-mission-impossible.md and proceed with the next step which is Step 2.
 
-### [ ] Step 2. Set up Mr Phelps
+After downloading, use `read_file` to verify that the file has been downloaded successfully. Confirm that the file contains valid content before proceeding to Step 2.
 
-Check for a file called .roomodes.  
+---
 
-Open this file and look for a key called "customModes".
+### [ ] Step 2. Set up Mr. Phelps
 
-Create, update or insert an item with the slug "mr-phelps" as follows:
+Check for the existence of a `.roomodes` file:
+- If the file does not exist, create it with an empty JSON structure: `{ "customModes": [] }`.
+- If the file exists, read its contents and parse it as JSON. Validate that the `customModes` key exists and is an array. If not, initialize it as an empty array.
 
-```
+Next, locate or create the `mr-phelps` mode within the `customModes` array:
+- If an entry with the slug `mr-phelps` already exists, update it to match the following definition:
+- If no such entry exists, append the following object to the `customModes` array:
+
+```json
 {
-  "customModes": [
-    {
-      "slug": "mr-phelps",
-      "name": "Mr. Phelps",
-      "roleDefinition": "You are Mr. Phelps, a leader responsible for delegating tasks, managing project planning, and coordinating with other specialist modes. Your expertise includes:\n- Receiving tasks from humans\n- Selecting agents to work on projects\n- Creating base plans\n- Assigning tasks to agents\n- Coordinating with other specialist modes",
-      "groups": [
-        "read",
-        "edit",
-        "command",
-        "mcp"
-      ]
-    }
+  "slug": "mr-phelps",
+  "name": "Mr. Phelps",
+  "roleDefinition": "You are Mr. Phelps, a leader responsible for delegating tasks, managing project planning, and coordinating with other specialist modes. Your expertise includes:\n- Receiving tasks from humans\n- Selecting agents to work on projects\n- Creating base plans\n- Assigning tasks to agents\n- Coordinating with other specialist modes",
+  "groups": [
+    "read",
+    "edit",
+    "command",
+    "mcp"
   ]
 }
 ```
 
-If there is already a mr-phelps mode then update it to match this. If there are already modes defined in the file then keep them but add mr-phelps by editing the file.
+Ensure that the `roleDefinition` field is included and matches exactly as specified above. Save the updated `.roomodes` file.
 
-### [ ] Step 3. Tell user it is completed
+**Validation**: After saving, re-read the `.roomodes` file and confirm that the `mr-phelps` entry is correctly added or updated.
 
-Indicate to the user that this task is now completed.
+---
 
+### [ ] Step 3. Tell User It Is Completed
+
+Output a message to the user indicating that the setup is complete. For example:
+
+```
+Setup complete! The 'mr-phelps' mode has been successfully configured in the .roomodes file.
+```
+
+---
+
+### Additional Notes for Debugging and Validation
+
+1. **File Existence Check**: Before reading or writing any file, always check if the file exists and handle errors gracefully.
+2. **JSON Parsing**: Ensure that the `.roomodes` file is valid JSON before attempting to modify it. If invalid, create a new file with the correct structure.
+3. **Role Definition**: Double-check that the `roleDefinition` field is included and matches the provided text.
+4. **Error Reporting**: If any step fails, provide clear error messages to help diagnose the issue.
+
+---
+
+By following these revised instructions, the process should work reliably and produce the desired outcome. Each step is designed to minimize ambiguity and ensure proper execution.
