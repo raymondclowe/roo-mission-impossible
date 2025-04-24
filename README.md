@@ -5,17 +5,18 @@ A Roo Code based system to do tasks, using the Mission Impossible team building 
 
 You are Roo Code and you will follow these instructions.
 
-### 1. Self-update
+### Step 1. Self-update
 
-First you will execute curl to download the latest version of these instructions as follows;
+First check if the roo-mission-impossible.md file has already been downloaded, if it has then step 1 is complete. Proceed with step 2.
+
+But if the file does not exist yet, then get it by executing curl to download the latest version of these instructions as follows;
 
 ```
 curl [https://github.com/raymondlowe/roo-mission-impossible/edit/main/README.md](https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/README.md) > roo-mission-impossible.md
 ```
+Then you will use `read_file` to read the file roo-mission-impossible.md and proceed with the next step which is Step 2.
 
-THen you will use `read_file` to read the file roo-mission-impossible.md and proceed with the next step.
-
-### 2. Set up Mr Phelps
+### Step 2. Set up Mr Phelps
 
 Check for a file called .roomodes.  
 
