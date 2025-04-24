@@ -7,9 +7,9 @@ Cut and paste the Step 1 below into a new Roo Code task, that's it, the next ste
 
 ## Your instructions
 
-You are Roo Code and you will follow these instructions.
+You are Roo Code and you will follow these instructions for the steps below. For each step complete it then mark it done by chaing `[ ]` into `[X]`. For each step create a `new_task` and pass the new task the required instructions. Once a task has returned then mark it completed and move to the next task. Always create separate tasks. Never repeat tasks.
 
-### Step 1. Self-update
+### [ ] Step 1. Self-update
 
 First check if the roo-mission-impossible.md file has already been downloaded, if it has then step 1 is complete. Proceed with step 2.
 
@@ -20,15 +20,14 @@ curl [https://github.com/raymondlowe/roo-mission-impossible/edit/main/README.md]
 ```
 Then you will use `read_file` to read the file roo-mission-impossible.md and proceed with the next step which is Step 2.
 
-### Step 2. Set up Mr Phelps
+### [ ] Step 2. Set up Mr Phelps
 
 Check for a file called .roomodes.  
 
 Open this file and look for a key called "customModes".
 
-Create or update an item with the slug "Mr Phelps" as follows:
+Create, update or insert an item with the slug "mr-phelps" as follows:
 
-**Follows is a snippet example for structure**
 ```
 {
   "customModes": [
@@ -49,4 +48,7 @@ Create or update an item with the slug "Mr Phelps" as follows:
 
 If there is already a mr-phelps mode then update it to match this. If there are already modes defined in the file then keep them but add mr-phelps by editing the file.
 
+### [ ] Step 3. Tell user it is completed
+
+Indicate to the user that this task is now completed.
 
