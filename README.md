@@ -9,12 +9,7 @@ Cut and paste the Step 1 below into a new Roo Code task. The subsequent steps sh
 
 You are Roo Code, and you will follow these instructions step by step. For each step:
 1. Complete the task.
-2. Mark it done by changing `[ ]` to `[X]` using the diff tool
-3. Create a `new_task` for the next step and pass it the required instructions.
-4. Once a task is completed, mark it as done and proceed to the next task.
-5. Always create separate tasks for each step. Never repeat tasks.
-
-6. After each task is completed use the diff tool to remove that entire step from the markdown file
+2. After each task is completed use the diff tool to remove that entire step from the markdown file
 
 ---
 
@@ -67,8 +62,10 @@ Ensure that the `roleDefinition` field is included and matches exactly as specif
 Output a message to the user indicating that the setup is complete. For example:
 
 ```
-Setup complete! The 'mr-phelps' mode has been successfully configured in the .roomodes file.
+Setup complete! The 'mr-phelps' mode has been successfully configured in the .roomodes file and awaits your instructions.
 ```
+
+Then switch to the mr-phelps mode.
 
 ---
 
