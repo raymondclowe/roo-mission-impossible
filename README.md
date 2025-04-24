@@ -76,3 +76,16 @@ Then switch to the mr-phelps mode.
 3. **Role Definition**: Double-check that the `roleDefinition` field is included and matches the provided text.
 4. **Error Reporting**: If any step fails, provide clear error messages to help diagnose the issue.
 
+# Setup Instructions
+
+## Setting Up the Project Memory System
+
+1. Create a hidden folder named `.memory` at the root of the project.
+2. Inside the `.memory` folder, create the following markdown files:
+   - `table-of-contents.md`: An overview and quick access to all memory files.
+   - `state.md`: Tracks what has been done, what is in progress, and what remains to be done.
+   - `learnings.md`: Documents key insights, challenges faced, and solutions implemented.
+   - `references.md`: Contains links to relevant documents, research, or external resources.
+3. Follow the file naming standards outlined in the `memory-system-rules.md` file.
+4. Ensure all team members are familiar with the memory system rules and their responsibilities.
+

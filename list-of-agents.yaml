@@ -1,0 +1,51 @@
+publisher:
+  name: Impossible Travel Guides
+  teams:
+    editorial:
+      - role: Editor
+        name: Ethan Hunt
+        slug: ethan-hunt
+        details: ethan-hunt-details.json
+        status: Active
+      - role: Researcher
+        name: Ilsa Faust
+        slug: ilsa-faust
+        details: ilsa-faust-details.json
+        status: Active
+      - role: Writer
+        name: William Brandt
+        slug: william-brandt
+        details: william-brandt-details.json
+        status: Active
+      - role: Fact Checker
+        name: Benji Dunn
+        slug: benji-dunn
+        details: benji-dunn-details.json
+        status: Active
+    marketing:
+      - role: Market Research Specialist
+        name: Luther Stickell
+        slug: luther-stickell
+        details: luther-stickell-details.json
+        status: Active
+      - role: SEO Specialist
+        name: Julia Meade
+        slug: julia-meade
+        details: julia-meade-details.json
+        status: Active
+    tech:
+      - role: Web Developer
+        name: August Walker
+        slug: august-walker
+        details: august-walker-details.json
+        status: Active
+      - role: Frontend Developer
+        name: Zhen Lei
+        slug: zhen-lei
+        details: zhen-lei-details.json
+        status: Active
+      - role: Backend Developer
+        name: Solomon Lane
+        slug: solomon-lane
+        details: solomon-lane-details.json
+        status: Active
