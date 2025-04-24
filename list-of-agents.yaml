@@ -1,51 +1,55 @@
-publisher:
-  name: Impossible Travel Guides
+Organisation:
+- role: Publisher
+  name: Jim Phelps
+  slug: jim-phelps
+  details: jim-phelps-details.json
+  status: Active  
   teams:
     editorial:
       - role: Editor
-        name: Ethan Hunt
-        slug: ethan-hunt
-        details: ethan-hunt-details.json
+        name: Roo Editor
+        slug: roo-editor
+        details: roo-editor-details.json
         status: Active
       - role: Researcher
-        name: Ilsa Faust
-        slug: ilsa-faust
-        details: ilsa-faust-details.json
+        name: Roo Researcher
+        slug: roo-researcher
+        details: roo-researcher-details.json
         status: Active
       - role: Writer
-        name: William Brandt
-        slug: william-brandt
-        details: william-brandt-details.json
+        name: Roo Writer
+        slug: roo-writer
+        details: roo-writer-details.json
         status: Active
       - role: Fact Checker
-        name: Benji Dunn
-        slug: benji-dunn
-        details: benji-dunn-details.json
+        name: Roo Fact Checker
+        slug: roo-fact-checker
+        details: roo-fact-checker-details.json
         status: Active
     marketing:
       - role: Market Research Specialist
-        name: Luther Stickell
-        slug: luther-stickell
-        details: luther-stickell-details.json
+        name: Roo Market Research Specialist
+        slug: roo-market-research-specialist
+        details: roo-market-research-specialist-details.json
         status: Active
       - role: SEO Specialist
-        name: Julia Meade
-        slug: julia-meade
-        details: julia-meade-details.json
+        name: Roo SEO Specialist
+        slug: roo-seo-specialist
+        details: roo-seo-specialist-details.json
         status: Active
     tech:
       - role: Web Developer
-        name: August Walker
-        slug: august-walker
-        details: august-walker-details.json
+        name: Roo Web Developer
+        slug: roo-web-developer
+        details: roo-web-developer-details.json
         status: Active
       - role: Frontend Developer
-        name: Zhen Lei
-        slug: zhen-lei
-        details: zhen-lei-details.json
+        name: Roo Frontend Developer
+        slug: roo-frontend-developer
+        details: roo-frontend-developer-details.json
         status: Active
       - role: Backend Developer
-        name: Solomon Lane
-        slug: solomon-lane
-        details: solomon-lane-details.json
+        name: Roo Backend Developer
+        slug: roo-backend-developer
+        details: roo-backend-developer-details.json
         status: Active

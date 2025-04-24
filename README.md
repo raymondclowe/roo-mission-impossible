@@ -33,23 +33,17 @@ Check for the existence of a `.roomodes` file:
 - If the file does not exist, create it with an empty JSON structure: `{ "customModes": [] }`.
 - If the file exists, read its contents and parse it as JSON. Validate that the `customModes` key exists and is an array. If not, initialize it as an empty array.
 
-Next, locate or create the `mr-phelps` mode within the `customModes` array:
-- If an entry with the slug `mr-phelps` already exists, update it to match the following definition:
+Next, locate or create the `jim-phelps` mode within the `customModes` array:
+- If an entry with the slug `jim-phelps` already exists, update it to match the following definition:
 - If no such entry exists, append the following object to the `customModes` array:
 
-```json
-{
-  "slug": "mr-phelps",
-  "name": "Mr. Phelps",
-  "roleDefinition": "You are Mr. Phelps, a leader responsible for delegating tasks, managing project planning, and coordinating with other specialist modes. Your expertise includes:\n- Receiving tasks from humans\n- Selecting agents to work on projects\n- Creating base plans\n- Assigning tasks to agents\n- Coordinating with other specialist modes",
-  "groups": [
-    "read",
-    "edit",
-    "command",
-    "mcp"
-  ]
-}
+Get the Mr Phelps definition like this:
+
 ```
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json
+```
+
+Then integrating that into `.roomodes`.
 
 Ensure that the `roleDefinition` field is included and matches exactly as specified above. Save the updated `.roomodes` file.
 
@@ -57,15 +51,15 @@ Ensure that the `roleDefinition` field is included and matches exactly as specif
 
 ---
 
-### [ ] Step 3. Tell User It Is Completed
+### [ ] Step 3. Tell User setup us Completed and they should now talk to Mr Phelps about their task.
 
 Output a message to the user indicating that the setup is complete. For example:
 
 ```
-Setup complete! The 'mr-phelps' mode has been successfully configured in the .roomodes file and awaits your instructions.
+Setup complete! The 'jim-phelps' mode has been successfully configured in the .roomodes file and awaits your instructions.
 ```
 
-Then switch to the mr-phelps mode.
+Then switch to the jim-phelps mode.
 
 ---
 
