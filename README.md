@@ -89,3 +89,15 @@ Then switch to the mr-phelps mode.
 3. Follow the file naming standards outlined in the `memory-system-rules.md` file.
 4. Ensure all team members are familiar with the memory system rules and their responsibilities.
 
+## Setting Up Mr. Phelps
+
+1. Download the latest `jim-phelps-details.json` file using the following command:
+
+```bash
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json > jim-phelps-details.json
+```
+
+2. Ensure the file is saved in the root directory of the project.
+3. Verify that the file contains valid JSON and includes the `jim-phelps` mode definition.
+4. Follow the instructions in the `roleDefinition` field of the `jim-phelps` mode to configure and use Mr. Phelps effectively.
+
