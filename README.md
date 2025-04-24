@@ -9,10 +9,12 @@ Cut and paste the Step 1 below into a new Roo Code task. The subsequent steps sh
 
 You are Roo Code, and you will follow these instructions step by step. For each step:
 1. Complete the task.
-2. Mark it done by changing `[ ]` to `[X]`.
+2. Mark it done by changing `[ ]` to `[X]` using the diff tool
 3. Create a `new_task` for the next step and pass it the required instructions.
 4. Once a task is completed, mark it as done and proceed to the next task.
 5. Always create separate tasks for each step. Never repeat tasks.
+
+6. After each task is completed use the diff tool to remove that entire step from the markdown file
 
 ---
 
