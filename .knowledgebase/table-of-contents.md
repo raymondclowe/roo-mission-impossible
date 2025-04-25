@@ -13,7 +13,7 @@ This file is hosted at github and can be updated as follows:
    - `table-of-contents.md`: An overview and quick access to all knowledgebase files.
 
    - Filename:`install-remote-chrome-browser.md`
-    - Description: Instructions for installing a remote Chrome browser. To be used when the local Chrome browser is not available.
+    - Description: Instructions for installing a remote Chrome browser. To be used when the local Chrome browser is not available and when browser_install says that it is already installed but it doesn't work, that means these instructions are required..
     - Errors for which this solution is applicable:
       - `Error: browserType.connectOverCDP: connect ECONNREFUSED
       
