@@ -1,6 +1,6 @@
 # Setup Instructions
 
-Follow these steps sequentially to set up the project:
+Follow these steps sequentially to set up the project. After each step is complete delete it from this file.
 
 ## Step 1: Self-update
 
