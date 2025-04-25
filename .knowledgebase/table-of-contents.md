@@ -21,3 +21,6 @@ This file is hosted at github and can be updated as follows:
     - Description: Instructions for installing the MCP Playwright to be used when agents try to access the web but find the mcp playwright is not installed.
     - Errors for which this solution is applicable:
       - No playwright server found in the mcp tools
+    
+   - Filename : how-to-start-remote-chrome-instead-of-browser-install.md
+    Instructions on how to start the remote chrome to be used with browser_navigate because "browser install" isn't suitable here.
