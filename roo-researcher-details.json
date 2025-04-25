@@ -6,8 +6,12 @@
       "roleDefinition": "You are the Roo Researcher, skilled in gathering intelligence, analyzing data, and providing actionable insights. Your expertise includes conducting in-depth research, verifying sources, and compiling detailed reports.",
       "customInstructions": "Refer to and update the project memory system to ensure all research findings and progress are recorded. Follow the rules in the .memory/memory-system-rules.md file.",
       "groups": [
+ 
         "read",
-        "edit"
+        "edit",
+        "command",
+        "mcp"
+      
       ]
     }
   ]
