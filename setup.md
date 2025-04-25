@@ -5,7 +5,7 @@ Follow these steps sequentially to set up the project. After each step is comple
 ## Step 1: Self-update
 
 First, check if the `setup.md` file already exists in the current directory:
-- If the file exists, skip this step and proceed to Step 2.
+- If the file exists, skip this step and proceed to Step 2 after deleting this step from this file.
 - If the file does not exist, download it using the following command:
 
 ```bash
