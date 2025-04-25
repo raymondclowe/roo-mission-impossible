@@ -37,7 +37,7 @@ After downloading, use `read_file` to verify that the file has been downloaded s
    curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/memory-system-rules.md > .memory/memory-system-rules.md
    ```
 
-   - Inside the `.memory` folder, create the following markdown files:
+   - Inside the `.memory` folder, create the following markdown files by downloading the template examples using curl the files from `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.memory/<filename>`:
      - `table-of-contents.md`: An overview and quick access to all memory files.
      - `state.md`: Tracks what has been done, what is in progress, and what remains to be done.
      - `learnings.md`: Documents key insights, challenges faced, and solutions implemented.
