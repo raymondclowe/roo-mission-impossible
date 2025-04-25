@@ -23,3 +23,11 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/s
 
 After downloading, open the file and follow the instructions sequentially.
 
+# Test it out
+
+Try giving these instructions:
+
+```
+Good morning Mr Phelps. Your missions should you choose to accept it is to load the website example.com and save the content into a markdown file. Good luck Jim.
+```
+
