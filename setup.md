@@ -4,12 +4,12 @@ Follow these steps sequentially to set up the project:
 
 ## Step 1: Self-update
 
-First, check if the `roo-mission-impossible.md` file already exists in the current directory:
+First, check if the `setup.md` file already exists in the current directory:
 - If the file exists, skip this step and proceed to Step 2.
 - If the file does not exist, download it using the following command:
 
 ```bash
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/README.md > roo-mission-impossible.md
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/setup.md > setup.md
 ```
 
 Verify that the file contains valid content before proceeding.
