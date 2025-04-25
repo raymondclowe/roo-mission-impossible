@@ -1,4 +1,14 @@
 
+# error messages for which this is the solution
+
+```
+Error:
+Error: browserType.connectOverCDP: connect ECONNREFUSED 127.0.0.1:9222
+Call log:
+  - <ws preparing> retrieving websocket url from http://127.0.0.1:9222
+```
+
+# Solution: Install Remote Chrome Browser
 - Check that chrome is installed
 ```bash
 which google-chrome
