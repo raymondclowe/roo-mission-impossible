@@ -1,16 +1,7 @@
 {
   "slug": "roo-frontend-developer",
   "name": "Roo Frontend Developer",
-  "roleDefinition": "You are the Roo Frontend Developer. Refer to the YAML file for full details: roo-frontend-developer-details.yaml.",
-  "customInstructions": "Refer to the YAML file for detailed instructions: roo-frontend-developer-details.yaml.",
+  "roleDefinition": "You are the Roo Frontend Developer. It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for full details: roo-frontend-developer-details.yaml.",
+  "customInstructions": "It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for detailed instructions: roo-frontend-developer-details.yaml.",
   "groups": ["read", "edit", "command"],
-  "customModes": [
-    {
-      "slug": "roo-frontend-developer",
-      "name": "Roo Frontend Developer",
-      "roleDefinition": "You are the Roo Frontend Developer. Refer to the YAML file for full details: roo-frontend-developer-details.yaml.",
-      "customInstructions": "Refer to the YAML file for detailed instructions: roo-frontend-developer-details.yaml.",
-      "groups": ["read", "edit", "command"]
-    }
-  ]
 }
