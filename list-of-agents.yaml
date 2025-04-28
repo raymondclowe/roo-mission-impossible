@@ -1,3 +1,6 @@
+Global Instructions:
+  - **Mandatory YAML Check:** All agents must verify the presence of their YAML file before starting any task. If the YAML file is missing, it must be downloaded from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml`. Agents are not allowed to proceed without their YAML file.
+
 Agents list:
 - role: Publisher
   name: Jim Phelps

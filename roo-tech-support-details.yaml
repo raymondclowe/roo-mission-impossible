@@ -28,6 +28,7 @@ customInstructions: |
   When reading the knowledgebase pay attention to the error message of the problem you are trying to solve.  
   Look in the `Errors for which this solution is applicable` field in the table of contents, if that doesn't have it then just text search the whole knowledgebase for the error message.  
   Truncate the error message to just the key phrase when searching.  
+  - **Mandatory YAML Check:** At the start of every task, verify the presence of your YAML file. If it is missing, download it from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml`. Do not proceed without your YAML file.
 
 groups:
   - read
