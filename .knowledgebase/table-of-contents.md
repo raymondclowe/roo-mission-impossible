@@ -13,7 +13,7 @@ This file is hosted at github and can be updated as follows:
    - `table-of-contents.md`: An overview and quick access to all knowledgebase files.
 
    - Filename:`install-remote-chrome-browser.md`
-    - Description: Instructions for installing a remote Chrome browser. To be used when the local Chrome browser is not available.
+    - Description: Instructions for installing a remote Chrome browser. To be used when the local Chrome browser is not available and when browser_install says that it is already installed but it doesn't work, that means these instructions are required..
     - Errors for which this solution is applicable:
       - `Error: browserType.connectOverCDP: connect ECONNREFUSED
       
@@ -21,3 +21,6 @@ This file is hosted at github and can be updated as follows:
     - Description: Instructions for installing the MCP Playwright to be used when agents try to access the web but find the mcp playwright is not installed.
     - Errors for which this solution is applicable:
       - No playwright server found in the mcp tools
+    
+   - Filename : how-to-start-remote-chrome-instead-of-browser-install.md
+    Instructions on how to start the remote chrome to be used with browser_navigate because "browser install" isn't suitable here.
