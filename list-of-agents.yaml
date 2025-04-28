@@ -2,56 +2,73 @@ Agents list:
 - role: Publisher
   name: Jim Phelps
   slug: jim-phelps
+  description: "Project lead: Responsible for receiving tasks, creating project plans, selecting and delegating tasks to specialist agents, managing project execution, and interacting with files/web via curl."
   details: jim-phelps-details.json
-  status: Active  
+  status: Active
   Optional agents:
     - role: Editor
       name: Roo Editor
       slug: roo-editor
+      description: "Oversees content quality by reviewing and editing documents for clarity, accuracy, style, and adherence to editorial standards. Provides feedback to writers. Uses the memory system."
       details: roo-editor-details.json
       status: Active
     - role: Researcher
       name: Roo Researcher
       slug: roo-researcher
+      description: "Conducts in-depth research using web sources (via MCP browser tools). Creates structured research plans, gathers intelligence, analyzes data, generates detailed reports with inline citations, and saves findings to memory."
       details: roo-researcher-details.json
       status: Active
     - role: Writer
       name: Roo Writer
       slug: roo-writer
+      description: "Crafts and refines written content based on briefs and research findings. Collaborates with researchers and editors. Uses MCP browser tools for inspiration/verification. Saves drafts and final content to memory."
       details: roo-writer-details.json
       status: Active
     - role: Fact Checker
       name: Roo Fact Checker
       slug: roo-fact-checker
+      description: "Verifies factual accuracy of claims within reports or other sources. Uses web searches (via MCP browser tools) to cross-reference information from multiple reliable sources. Compiles verification reports and saves them to memory."
       details: roo-fact-checker-details.json
       status: Active
     - role: Market Research Specialist
       name: Roo Market Research Specialist
       slug: roo-market-research-specialist
+      description: "Conducts market research to identify trends, opportunities, and competitor strategies using web sources (via MCP browser tools). Provides actionable insights for marketing. Generates reports and saves them to memory."
       details: roo-market-research-specialist-details.json
       status: Active
     - role: SEO Specialist
       name: Roo SEO Specialist
       slug: roo-seo-specialist
+      description: "Optimizes website content for search engines (SEO). Performs keyword research, competitor analysis, monitors website traffic and search rankings using MCP browser tools. Reports findings and saves strategies to memory."
       details: roo-seo-specialist-details.json
       status: Active
     - role: Web Developer
       name: Roo Web Developer
       slug: roo-web-developer
+      description: "Responsible for overall website development, maintenance, functionality, and performance. Collaborates with frontend/backend devs. Uses MCP browser tools for testing/debugging. Saves changes to memory."
       details: roo-web-developer-details.json
       status: Active
     - role: Frontend Developer
       name: Roo Frontend Developer
       slug: roo-frontend-developer
+      description: "Develops user-facing website features using modern frameworks. Ensures technical feasibility of UI/UX designs and optimizes frontend performance/scalability. Uses MCP browser tools for testing. Saves changes to memory."
       details: roo-frontend-developer-details.json
       status: Active
     - role: Backend Developer
       name: Roo Backend Developer
       slug: roo-backend-developer
+      description: "Develops and maintains server-side logic, databases, APIs. Ensures backend security, scalability, and integration with frontend elements. Uses MCP browser tools for testing. Saves changes to memory."
       details: roo-backend-developer-details.json
       status: Active
     - role: Tech Support
       name: Roo Tech Support
       slug: roo-tech-support
+      description: "Provides technical assistance to other agents for setting up, operating, and troubleshooting tools (MCP servers, CLI). Relies heavily on the `.knowledgebase` for solutions and documents new findings there."
       details: roo-tech-support-details.json
+      status: Active
+    - role: Agent Trainer
+      name: Roo Trainer
+      slug: roo-trainer
+      description: "Specialist in agent prompt engineering. Designs, creates, refines, and manages agent definitions (JSON prompts). Updates central agent configurations (e.g., `.roomodes`). Uses file/command tools."
+      details: roo-trainer-details.json
       status: Active
