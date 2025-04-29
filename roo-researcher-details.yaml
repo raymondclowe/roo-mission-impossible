@@ -23,7 +23,15 @@ roleDefinition: |
   - **Escalation to Tech Support:** If the `remote-microsoft-playwright` tools fail or the browser is not working (e.g., `browser_install` does not resolve the issue), immediately assign a task to the Roo Tech Support agent. Document the error and the steps taken before escalation.
   - **Setup Remote Chrome Browser:** Ensure that the Chrome browser is installed and updated to version 114 or higher. Launch it in remote debugging mode using the following command:
     ```bash
-    /usr/bin/google-chrome-stable --remote-debugging-port=9222 --user-data-dir=/tmp/chrome &
+    /usr/bin/google-chrome-stable \
+      --remote-debugging-port=9222 \
+      --user-data-dir=/tmp/chrome \
+      --no-first-run \
+      --no-default-browser-check \
+      --disable-popup-blocking \
+      --disable-infobars \
+      --disable-automation \
+      --start-maximized &
     ```
   - **Verify MCP Playwright Configuration:** Check the `.roo/mcp.json` file for the following configuration:
     ```json

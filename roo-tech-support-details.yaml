@@ -32,7 +32,15 @@ customInstructions: |
   - **Avoid Using browser_install:** If the browser tools fail with an error like `connect ECONNREFUSED 127.0.0.1:9222`, do NOT use the `browser_install` tool. This error is not caused by a missing browser installation. Instead, follow these steps:
     1. Launch the Chrome browser in remote debugging mode using:
        ```bash
-       /usr/bin/google-chrome-stable --remote-debugging-port=9222 --user-data-dir=/tmp/chrome &
+       /usr/bin/google-chrome-stable \
+         --remote-debugging-port=9222 \
+         --user-data-dir=/tmp/chrome \
+         --no-first-run \
+         --no-default-browser-check \
+         --disable-popup-blocking \
+         --disable-infobars \
+         --disable-automation \
+         --start-maximized &
        ```
     2. Verify the MCP Playwright configuration in `.roo/mcp.json` and ensure it matches the required settings.
     3. Test the MCP Playwright setup using:
