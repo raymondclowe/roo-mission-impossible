@@ -18,6 +18,7 @@ required_knowledge:
 
 knowledge_sources:
   - .knowledgebase/astro-markdown-setup-guide.md
+  - .knowledgebase/astro-mdx-integration-guide.md
   - .knowledgebase/astro-research-report.md
   - https://docs.astro.build/en/getting-started/ (via curl)
   - https://docs.astro.build/en/install-and-setup/ (via curl)

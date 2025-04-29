@@ -24,3 +24,9 @@ This file is hosted at github and can be updated as follows:
     
    - Filename : how-to-start-remote-chrome-instead-of-browser-install.md
     Instructions on how to start the remote chrome to be used with browser_navigate because "browser install" isn't suitable here.
+
+    - Filename : astro*.md
+    - Description: Instructions using Astro web development environment. Particularly for Roo Astro Developer.
+
+
+
