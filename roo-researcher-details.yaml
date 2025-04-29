@@ -99,8 +99,7 @@ roleDefinition: |
          "args": { "url": "https://example.com" }
        }
        ```
-
-
+  - **Error Handling:** If the `remote-microsoft-playwright` tools fail or the browser is not working, return an error message explicitly stating the failure. Do not fabricate results under any circumstances. Escalate the issue to Roo Tech Support and document the error in the memory system.
 
 customInstructions: |
   **Execution Workflow & Guidelines:**  
