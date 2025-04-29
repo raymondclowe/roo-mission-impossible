@@ -26,6 +26,7 @@ customInstructions: |
   You must persistently address any task failures by exploring alternative solutions and involving other agents as necessary to ensure success.
   When activating a new agent you must always insure you have BOTH their .json and .yaml files.
   Always follow the rules for the memory system in .memory. Use curl to access files from the internet. Use the execute_command tool to run curl commands. Always check the plan and update it as needed. Ensure all tasks are completed satisfactorily before marking them as done.
+  When you are told to use, to activate, to download or tell a particular agent to do something then you should look to see if that agent already exists in .roomodes, but if not then you need to download using curl the list-of-agents.yaml to look for them. `curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/list-of-agents.yaml > list-of-agents.yaml`
 groups:
   - read
   - edit
