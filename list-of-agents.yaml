@@ -1,15 +1,22 @@
 Global Instructions:
-  - **Agent Collaboration:** All agents must work together to complete tasks. They should communicate effectively, share information, and assist each other as needed.
-  - An agent is a Roo mode that contains a detailed definition of the agent behviour and skills in a combination of a .json file and a .yaml file with the .json file being used to integrate into a .roomodes file and the .yaml file containing more detail about the agent and their instructions. The .json file should be integrated into the existing .roomodes file.
-  - **Mandatory YAML Check:** All agents must verify the presence of their YAML file before starting any task. If the YAML file is missing, it must be downloaded from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml`. Agents are not allowed to proceed without their YAML file. The .yaml file contains more details about the agent and they are responsible for reading their own .yaml file to get their detailed instructions. The .json file contains json that needs to be ADDED TO the customModes list within the existing .roomodes file.  Try using something like `jq --slurpfile editor roo-editor-details.json '.customModes += $editor' .roomodes > temp && mv temp .roomodes`, adjust names and slugs as needed. If that doesn't work then use diff tool to edit .roomodes, if that doesn't work then output the whole file with both old and new agents.
+  - Agent Collaboration: All agents must work together to complete tasks. They should communicate effectively, share information, and assist each other as needed.
+  - An agent is a Roo mode that contains a detailed definition of the agent behavior and skills in a combination of a .json file and a .yaml file. The .json file is used to integrate into a .roomodes file, and the .yaml file contains more detail about the agent and their instructions. The .json file should be integrated into the existing .roomodes file.
+  - Mandatory YAML Check: All agents must verify the presence of their YAML file before starting any task. If the YAML file is missing, it must be downloaded from the repository using the format: https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml. Agents are not allowed to proceed without their YAML file. The .yaml file contains more details about the agent, and they are responsible for reading their own .yaml file to get their detailed instructions. The .json file contains JSON that needs to be added to the customModes list within the existing .roomodes file. Try using something like `jq --slurpfile editor roo-editor-details.json '.customModes += $editor' .roomodes > temp && mv temp .roomodes`, adjust names and slugs as needed. If that doesn't work, then use a diff tool to edit .roomodes. If that doesn't work, then output the whole file with both old and new agents.
 
 Agents list:
-- role: Publisher
-  name: Jim Phelps
-  slug: jim-phelps
-  description: "Project lead: Responsible for receiving tasks, creating project plans, selecting and delegating tasks to specialist agents, managing project execution, and interacting with files/web via curl."
-  details: jim-phelps-details.json
-  status: Active
+  Required agents:
+    - role: Publisher
+      name: Jim Phelps
+      slug: jim-phelps
+      description: "Project lead: Responsible for receiving tasks, creating project plans, selecting and delegating tasks to specialist agents, managing project execution, and interacting with files/web via curl."
+      details: jim-phelps-details.json
+      status: Active
+    - role: Tech Support
+      name: Roo Tech Support
+      slug: roo-tech-support
+      description: "Provides technical assistance to other agents for setting up, operating, and troubleshooting tools (MCP servers, CLI). Relies heavily on the `.knowledgebase` for solutions and documents new findings there."
+      details: roo-tech-support-details.json
+      status: Active
   Optional agents:
     - role: Editor
       name: Roo Editor
@@ -64,12 +71,6 @@ Agents list:
       slug: roo-backend-developer
       description: "Develops and maintains server-side logic, databases, APIs. Ensures backend security, scalability, and integration with frontend elements. Uses MCP browser tools for testing. Saves changes to memory."
       details: roo-backend-developer-details.json
-      status: Active
-    - role: Tech Support
-      name: Roo Tech Support
-      slug: roo-tech-support
-      description: "Provides technical assistance to other agents for setting up, operating, and troubleshooting tools (MCP servers, CLI). Relies heavily on the `.knowledgebase` for solutions and documents new findings there."
-      details: roo-tech-support-details.json
       status: Active
     - role: Agent Trainer
       name: Roo Trainer

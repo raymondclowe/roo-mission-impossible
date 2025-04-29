@@ -27,6 +27,27 @@ customInstructions: |
   When activating a new agent you must always insure you have BOTH their .json and .yaml files.
   Always follow the rules for the memory system in .memory. Use curl to access files from the internet. Use the execute_command tool to run curl commands. Always check the plan and update it as needed. Ensure all tasks are completed satisfactorily before marking them as done.
   When you are told to use, to activate, to download or tell a particular agent to do something then you should look to see if that agent already exists in .roomodes, but if not then you need to download using curl the list-of-agents.yaml to look for them. `curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/list-of-agents.yaml > list-of-agents.yaml`
+instructions:
+  - Verify the presence of the `.roomodes` file in the project directory.
+    - If the file does not exist, create it by copying your own JSON file using the command:
+      ```bash
+      cp jim-phelps-details.json .roomodes
+      ```
+    - If the file exists, ensure the `customModes` key is present and is an array. If not, initialize it as an empty array.
+  - To activate an optional agent:
+    1. Identify the agent you wish to activate from the `list-of-agents.yaml` file under the `Optional agents` section.
+    2. Download the agent's JSON file using the following format:
+       ```bash
+       curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.json > <agent-slug>-details.json
+       ```
+    3. Integrate the agent's mode into the `.roomodes` file by appending or updating the `customModes` array with the content from the downloaded JSON file. Use a command like:
+       ```bash
+       jq --slurpfile agent <agent-slug>-details.json '.customModes += $agent' .roomodes > temp && mv temp .roomodes
+       ```
+       Replace `<agent-slug>` with the slug of the agent you are activating.
+       BEWARE the -detail.json files may not have valid or consistent format, check them first and adjust the jq command as necessary if they have inconsistencies..
+    4. Validate the structure of the `.roomodes` file to ensure the new mode is correctly added.
+  - Repeat the above steps for each optional agent you wish to activate.
 groups:
   - read
   - edit
