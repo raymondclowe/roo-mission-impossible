@@ -88,3 +88,7 @@ Setup complete! The 'jim-phelps' mode has been successfully configured in the .r
 ```
 
 Then switch to the `jim-phelps` mode to begin task delegation.
+
+## Note for Web Development Teams
+
+When performing basic setup tasks such as using `npm create`, `npm install`, or `npm init`, always pass the `-y` flag. This ensures the process works unattended by automatically accepting default options.
