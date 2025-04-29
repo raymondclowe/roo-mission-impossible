@@ -65,7 +65,21 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 5. Once all the above is done then DELETE THIS `setup.md` file to avoid instructions being repeated
 ---
 
-## Step 4: Confirm Setup Completion
+## Step 4: Set up the Tech Support agent
+
+1. Download the latest `tech-support-details` `.json` and `.yaml` files using the following commands:
+
+```bash
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.json > tech-support-details.json
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.yaml > tech-support-details.yaml
+```
+2. Check for the existence of a `.roomodes` file:
+   - If the file does not exist, create it by copying over the tech-support-details.json file to by going `cp tech-support-detials.json .roomodes` 
+   - If the file exists, read its contents and validate that the `customModes` key exists and is an array. If not, initialize it as an empty array.
+3. If tech-support is not already in the .roomodes file then integrate the `tech-support` mode into the `.roomodes` file by appending or updating the `customModes` array with the content from `tech-support-details.json`.
+4. Save the updated `.roomodes` file and validate its structure.
+
+## Step 5: Confirm Setup Completion
 
 Output a message to the user indicating that the setup is complete. For example:
 
