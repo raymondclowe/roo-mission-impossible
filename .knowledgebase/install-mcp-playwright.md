@@ -55,11 +55,16 @@ Use the playwright install command to install the browsers:
 playwright install
 ```
 
-Test and confirm that the npx line works by running the following command:
+Test the MCP Playwright setup by using the `browser_navigate` command in the remote-microsoft-playwright mcp server to open example.com:
+  ```json
+  {
+    "tool": "browser_navigate",
+    "args": { "url": "https://example.com" }
+  }
+  ```
 
-```bash
-npx @playwright/mcp
-```
+
+
 If you see no errors then the MCP Playwright is installed correctly.
 
 With the playwright mcp server installed and the remote chrome browser running as per the instructions in `install-remote-chrome-browser.md`, you can now run use the mcp tools to access the web. Try opening example.com using the `use_mcp_tool` to run the `remote-microsoft-playwright` server to use the `browser_navigate` to open example.com
