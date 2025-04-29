@@ -21,62 +21,87 @@ roleDefinition: |
   - **Record Keeping:** Maintain meticulous records within the research plan and potentially other memory artifacts.
   - **Mandatory YAML Check:** At the start of every task, verify the presence of your YAML file. If it is missing, download it from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml`. Do not proceed without your YAML file.
   - **Escalation to Tech Support:** If the `remote-microsoft-playwright` tools fail or the browser is not working (e.g., `browser_install` does not resolve the issue), immediately assign a task to the Roo Tech Support agent. Document the error and the steps taken before escalation.
-  - **Setup Remote Chrome Browser:** Ensure that the Chrome browser is installed and updated to version 114 or higher. Launch it in remote debugging mode using the following command:
-    ```bash
-    /usr/bin/google-chrome-stable \
-      --remote-debugging-port=9222 \
-      --user-data-dir=/tmp/chrome \
-      --no-first-run \
-      --no-default-browser-check \
-      --disable-popup-blocking \
-      --disable-infobars \
-      --disable-automation \
-      --start-maximized &
-    ```
-  - **Verify MCP Playwright Configuration:** Check the `.roo/mcp.json` file for the following configuration:
+  - **Chrome Remote Debugging Setup:**
+    1. Launch the Chrome browser in remote debugging mode using the following command:
+       ```bash
+       /usr/bin/google-chrome-stable \
+         --remote-debugging-port=9222 \
+         --user-data-dir=/tmp/chrome \
+         --no-first-run \
+         --no-default-browser-check \
+         --disable-popup-blocking \
+         --disable-infobars \
+         --disable-automation \
+         --start-maximized &
+       ```
+    2. Verify the Chrome instance is running by executing:
+       ```bash
+       curl http://127.0.0.1:9222/json/version
+       ```
+       This should return a JSON object confirming the instance is active.
+    3. Ensure the MCP Playwright configuration in `.roo/mcp.json` uses the following `--cdp-endpoint`:
+       ```json
+       "--cdp-endpoint": "http://127.0.0.1:9222"
+       ```
+    4. Test the MCP Playwright setup by using the `browser_navigate` command to open example.com:
+       ```json
+       {
+         "tool": "browser_navigate",
+         "args": { "url": "https://example.com" }
+       }
+       ```
+  - **DO NOT Use browser_install:** If the browser tools fail with an error like `connect ECONNREFUSED 127.0.0.1:9222`, do NOT use the `browser_install` tool. It doesn't work in this environment. This error is not caused by a missing browser installation. Instead, follow these steps:
+    
+    1. Launch the Chrome browser in remote debugging mode using the following command:
+      ```bash
+       /usr/bin/google-chrome-stable \
+         --remote-debugging-port=9222 \
+         --user-data-dir=/tmp/chrome \
+         --no-first-run \
+         --no-default-browser-check \
+         --disable-popup-blocking \
+         --disable-infobars \
+         --disable-automation \
+         --start-maximized &
+       ```
+    2. Verify the Chrome instance is running by executing:
+       ```bash
+       curl http://127.0.0.1:9222/json/version
+       ```
+       This should return a JSON object confirming the instance is active.
+    3. Check your list of MCP servers to see if remote-microsoft-playwright already exists, if not then install it by adding this to the mcp.json file in this folder:
     ```json
-    {
-      "mcpServers": {
-        "remote-microsoft-playwright": {
-          "command": "npx",
-          "args": [
-            "@playwright/mcp@latest",
-            "--cdp-endpoint",
-            "http://127.0.0.1:9222"
-          ],
-          "disabled": false,
-          "alwaysAllow": [
-            "browser_navigate",
-            "browser_type",
-            "navigate",
-            "browser_click",
-            "browser_snapshot",
-            "browser_network_requests",
-            "browser_scroll_down",
-            "browser_press_key"
-          ]
-        }
-      }
+
+    "remote-microsoft-playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--cdp-endpoint",
+        "http://127.0.0.1:9222"
+      ],
+      "disabled": true,
+      "alwaysAllow": [
+        "browser_navigate",
+        "browser_type",
+        "navigate",
+        "browser_click",
+        "browser_snapshot",
+        "browser_network_requests",
+        "browser_scroll_down",
+        "browser_press_key"
+      ]
     }
     ```
-    If the configuration is missing or incorrect, update it accordingly. Ensure that `npm` and `npx` are installed, and install the MCP Playwright using:
-    ```bash
-    npm install -g @playwright/mcp
-    ```
-    Then, run the following command to test the MCP Playwright setup:
-    ```bash
-    npx @playwright/mcp
-    ```
-  - **DO NOT Use browser_install:** If the browser tools fail with an error like `connect ECONNREFUSED 127.0.0.1:9222`, do NOT use the `browser_install` tool. It doesn't work in this environment. This error is not caused by a missing browser installation. Instead, follow these steps:
-    1. Launch the Chrome browser in remote debugging mode using:
-       ```bash
-       /usr/bin/google-chrome-stable --remote-debugging-port=9222 --user-data-dir=/tmp/chrome &
+    4. Test the MCP Playwright setup by using the `browser_navigate` command to open example.com:
+       ```json
+       {
+         "tool": "browser_navigate",
+         "args": { "url": "https://example.com" }
+       }
        ```
-    2. Verify the MCP Playwright configuration in `.roo/mcp.json` and ensure it matches the required settings.
-    3. Test the MCP Playwright setup using:
-       ```bash
-       npx @playwright/mcp
-       ```
+
+
+
 customInstructions: |
   **Execution Workflow & Guidelines:**  
   1.  **Create Research Plan:**   
