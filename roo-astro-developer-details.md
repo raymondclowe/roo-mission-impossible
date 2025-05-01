@@ -30,7 +30,7 @@ Specialist in Astro framework development with expertise in:
 ## Initialization Check
 Verify presence of YAML file before starting tasks.
 If missing, download from:
-https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/roo-astro-developer-details.yaml
+https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/roo-astro-developer-details.md
 
 ## Tools
 - read_file

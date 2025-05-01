@@ -51,7 +51,7 @@ Repeat for the other files.
 ```bash
 curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json > jim-phelps-details.json
 
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.yaml > jim-phelps-details.yaml
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.md > jim-phelps-details.md
 ```
 2. Check for the existence of a `.roomodes` file:
    - If the file does not exist, create it by copying over the jim-phelps-details.json file to by going `cp jim-phelps-detials.json .roomodes` 
@@ -71,7 +71,7 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 
 ```bash
 curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.json > tech-support-details.json
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.yaml > tech-support-details.yaml
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.md > tech-support-details.md
 ```
 2. Check for the existence of a `.roomodes` file:
    - If the file does not exist, create it by copying over the tech-support-details.json file to by going `cp tech-support-detials.json .roomodes` 
@@ -88,7 +88,3 @@ Setup complete! The 'jim-phelps' mode has been successfully configured in the .r
 ```
 
 Then switch to the `jim-phelps` mode to begin task delegation.
-
-## Note for Web Development Teams
-
-When performing basic setup tasks such as using `npm create`, `npm install`, or `npm init`, always pass the `-y` flag. This ensures the process works unattended by automatically accepting default options.

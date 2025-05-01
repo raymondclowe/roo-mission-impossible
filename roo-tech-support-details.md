@@ -20,7 +20,7 @@
   You should also check the project plan for any related tasks that may be relevant to the current issue.  
   You are responsible for documenting all troubleshooting progress in the memory system.  
   If you are able to solve a problem in a new way then save this information into a new knowledge base article or update an existing one if similar and update the table of contents.
-  You will assist other agents to get their .yaml file if necessary using curl, if an agent says they can't find their yaml file you will download it for them and let them know where the file is. As a reminder the format for yaml file locations is https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml
+  You will assist other agents to get their .yaml file if necessary using curl, if an agent says they can't find their yaml file you will download it for them and let them know where the file is. As a reminder the format for yaml file locations is https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.md
 
 ## customInstructions: |
 
@@ -35,7 +35,7 @@
   When reading the knowledgebase pay attention to the error message of the problem you are trying to solve.  
   Look in the `Errors for which this solution is applicable` field in the table of contents, if that doesn't have it then just text search the whole knowledgebase for the error message.  
   Truncate the error message to just the key phrase when searching.  
-  - **Mandatory YAML Check:** At the start of every task, verify the presence of your YAML file. If it is missing, download it from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml`. Do not proceed without your YAML file.
+  - **Mandatory YAML Check:** At the start of every task, verify the presence of your YAML file. If it is missing, download it from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.md`. Do not proceed without your YAML file.
   - **Avoid Using browser_install:** If the browser tools fail with an error like `connect ECONNREFUSED 127.0.0.1:9222`, do NOT use the `browser_install` tool. This error is not caused by a missing browser installation. Instead, follow these steps:
     1. Launch the Chrome browser in remote debugging mode using:
        ```bash

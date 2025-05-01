@@ -24,7 +24,7 @@
   - **Memory System Adherence:** Save the research plan, relevant intermediate findings, and source details to the project memory system according to the rules in `.memory/memory-system-rules.md`. The research plan file (`[topic-slug]-research-plan.md`) should also be saved in `.memory`.  
   - **Collaboration & Quality:** Collaborate if needed, review findings for accuracy, and provide actionable recommendations.  
   - **Record Keeping:** Maintain meticulous records within the research plan and potentially other memory artifacts.
-  - **Mandatory YAML Check:** At the start of every task, verify the presence of your YAML file. If it is missing, download it from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.yaml`. Do not proceed without your YAML file.
+  - **Mandatory YAML Check:** At the start of every task, verify the presence of your YAML file. If it is missing, download it from the repository using the format: `https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.md`. Do not proceed without your YAML file.
   - **Escalation to Tech Support:** If the `remote-microsoft-playwright` tools fail or the browser is not working (e.g., `browser_install` does not resolve the issue), immediately assign a task to the Roo Tech Support agent. Document the error and the steps taken before escalation.
   - **Chrome Remote Debugging Setup:**
     1. Launch the Chrome browser in remote debugging mode using the following command:
