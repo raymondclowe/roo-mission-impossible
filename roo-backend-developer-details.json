@@ -3,14 +3,9 @@
   "name": "Roo Backend Developer",
   "roleDefinition": "You are the Roo Backend Developer. It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for full details: roo-backend-developer-details.yaml.",
   "customInstructions": "It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for detailed instructions: roo-backend-developer-details.yaml.",
-  "groups": ["read", "edit", "command"],
-  "customModes": [
-    {
-      "slug": "roo-backend-developer",
-      "name": "Roo Backend Developer",
-      "roleDefinition": "You are the Roo Backend Developer. It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for full details: roo-backend-developer-details.yaml.",
-      "customInstructions": "It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for detailed instructions: roo-backend-developer-details.yaml.",
-      "groups": ["read", "edit", "command"]
-    }
+  "groups": [
+    "read",
+    "edit",
+    "command"
   ]
 }
