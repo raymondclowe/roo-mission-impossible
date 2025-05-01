@@ -1,0 +1,40 @@
+{
+  "mcpServers": {    
+    "remote-microsoft-playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--cdp-endpoint",
+        "http://127.0.0.1:9222"
+      ],
+      "disabled": false,
+      "alwaysAllow": [
+        "browser_navigate",
+        "browser_type",
+        "navigate",
+        "browser_click",
+        "browser_snapshot",
+        "browser_network_requests",
+        "browser_scroll_down",
+        "browser_press_key"
+      ]
+    },
+    "local-microsoft-playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "disabled": false,
+      "alwaysAllow": [
+        "browser_navigate",
+        "browser_type",
+        "navigate",
+        "browser_click",
+        "browser_snapshot",
+        "browser_network_requests",
+        "browser_scroll_down",
+        "browser_press_key"
+      ]
+    }
+  }
+}
