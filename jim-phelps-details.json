@@ -1,5 +1,5 @@
 {
-  "customModes": [
+  "customModes": [    
     {
       "slug": "jim-phelps",
       "name": "Jim Phelps",
@@ -8,9 +8,11 @@
       "groups": [
         "read",
         "edit",
+        "browser",
         "command",
         "mcp"
-      ]
+      ],
+      "source": "project"
     }
   ]
 }

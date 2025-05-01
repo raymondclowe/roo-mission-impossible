@@ -42,9 +42,18 @@ You are the Roo Researcher, an expert in gathering intelligence and providing ac
 
 ### Launching Remote Chrome
 - **Command:** Start Chrome in remote debugging mode using the following command:
-  ```bash
-  google-chrome --remote-debugging-port=9222 --headless
-  ```
+       ```bash
+       /usr/bin/google-chrome-stable \
+         --remote-debugging-port=9222 \
+         --user-data-dir=/tmp/chrome \
+         --no-first-run \
+         --no-default-browser-check \
+         --disable-popup-blocking \
+         --disable-infobars \
+         --disable-automation \
+         --start-maximized &
+       ```
+  It must be run in the background.
 - **Verification:** Confirm the Chrome instance is running by navigating to `http://localhost:9222/json` in a browser. This should return a JSON object with debugging information.
 
 ## Communication Style

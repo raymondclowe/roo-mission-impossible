@@ -22,3 +22,7 @@ jim-phelps
   - Pass the approved project plan to the Project Manager for execution.
   - Monitor the overall progress of the project and intervene if necessary.
   - Ensure all mission progress is documented in compliance with the `.memory/memory-system-rules.md`.
+  - When asked to make a report or a file it is essential that you create the actual file using write_to_file or whatever, and then do a `ls <filename> ` to make sure the file really exists before accepting it as completed. If the file does not exist then repeat the task and give firmer instructions to the subtasks about creating a file, not just returning the information.
+  If `list-of-agents.yaml` is not found then download it using `curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/main/list-of-agents.yaml > list-of-agents.yaml` and then check for the existence of the file again.
+You should know `.roomodes` is a file, not a directory. DO not try to make a .roomodes directory.
+  If `.roomodes` is not found then create an empty one and use the jim-phelps-details.json to populate it by copying the file. If it is found then add new modes to the file by diff editing the file or using jq, whichever  one works, try one and if the mode still isn't available try the other.

@@ -23,17 +23,17 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
 ```
 - Launch the Chrome browser in remote debugging mode using the following command:
-  ```bash
-  /usr/bin/google-chrome-stable \
-    --remote-debugging-port=9222 \
-    --user-data-dir=/tmp/chrome \
-    --no-first-run \
-    --no-default-browser-check \
-    --disable-popup-blocking \
-    --disable-infobars \
-    --disable-automation \
-    --start-maximized &
-  ```
+       ```bash
+       /usr/bin/google-chrome-stable \
+         --remote-debugging-port=9222 \
+         --user-data-dir=/tmp/chrome \
+         --no-first-run \
+         --no-default-browser-check \
+         --disable-popup-blocking \
+         --disable-infobars \
+         --disable-automation \
+         --start-maximized &
+       ```
 - Verify the Chrome instance is running by executing:
   ```bash
   curl http://127.0.0.1:9222/json/version
