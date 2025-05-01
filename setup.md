@@ -46,7 +46,7 @@ Repeat for the other files.
 ## Step 3: Set up Mr. Phelps
 
 1
-1. Download the latest `jim-phelps-details` `.json` and `.yaml` files using the following commands:
+1. Download the latest `jim-phelps-details` `.json` and `.md` files using the following commands:
 
 ```bash
 curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json > jim-phelps-details.json
@@ -67,7 +67,7 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 
 ## Step 4: Set up the Tech Support agent
 
-1. Download the latest `tech-support-details` `.json` and `.yaml` files using the following commands:
+1. Download the latest `tech-support-details` `.json` and `.md` files using the following commands:
 
 ```bash
 curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.json > tech-support-details.json
