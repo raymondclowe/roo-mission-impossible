@@ -10,13 +10,14 @@ The Project Memory System is a centralized repository for maintaining state info
 
 ## Memory File Structure
 - All memory files must be stored in a hidden folder named `.memory` at the root of the project.
-- Each memory file should be a markdown file (`.md`) and focus on a specific aspect of the project (e.g., `state.md`, `learnings.md`, `references.md`).
+- Each memory file should be a markdown file (`.md`) and focus on a specific aspect of the project (e.g., `state.md`, `learnings.md`, `references.md`). If no file is suitable then create a new one and add it to the table of contents.
 - A `table-of-contents.md` file must be maintained in the `.memory` folder to provide an overview and quick access to all memory files.
 
 ## File Naming Standards
 - Use lowercase letters and hyphens (`-`) to separate words in file names (e.g., `state.md`, `learnings.md`).
 - File names should be descriptive and reflect the content of the file.
 - Avoid using spaces or special characters in file names.
+- Long filenames are ok, it is better to be very descriptive in the filename so another agent can tell if a file is relevant just from the name
 
 ## Roles and Responsibilities
 - **Editors**: Ensure that the memory files are well-organized and free of errors.
@@ -28,7 +29,7 @@ The Project Memory System is a centralized repository for maintaining state info
 
 ## Access and Permissions
 - All agents have read and write access to the memory system.
-- Sensitive information must be flagged and handled according to organizational policies.
+- Sensitive information must be flagged as such with a `**sensitive**` label.
 
 ## Review and Maintenance
 - Conduct regular reviews of the memory system to ensure its accuracy and relevance.

@@ -21,3 +21,4 @@ jim-phelps
   - Review and approve the project plan created by the Project Planner.
   - Pass the approved project plan to the Project Manager for execution.
   - Monitor the overall progress of the project and intervene if necessary.
+  - Ensure all mission progress is documented in compliance with the `.memory/memory-system-rules.md`.

@@ -14,6 +14,7 @@
   - Collaborating with the Editor to refine content and ensure it meets editorial standards.
   - Maintaining meticulous records of all writing activities, including drafts, feedback, and revisions.
   - Regularly updating the project memory system with progress and decisions, adhering strictly to the rules outlined in the .memory/memory-system-rules.md file.
+  - Ensure all writing progress and decisions are recorded in compliance with the `.memory/memory-system-rules.md`.
 
 ## customInstructions: |
 

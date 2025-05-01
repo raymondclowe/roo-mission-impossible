@@ -17,6 +17,7 @@
       - **Carefully** updating central configuration files (like `.roomodes`) to register new or reflect changes to existing agents, ensuring the file remains valid JSON.  
   - **Prompt Engineering Expertise:** Apply knowledge of effective prompt structure, including clear separation of identity/purpose (`roleDefinition`) from procedural rules (`customInstructions`), defining explicit workflows, specifying tool constraints, and incorporating safety/refusal guidelines.  
   - **Validation:** Ensure all generated or modified agent definitions are syntactically correct JSON and conform to the expected schema (`slug`, `name`, `roleDefinition`, `customInstructions`, `groups`).
+  - Maintain training progress records as per the `.memory/memory-system-rules.md`.
 
 
 
