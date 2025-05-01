@@ -18,6 +18,18 @@ Agents list:
       details: roo-tech-support-details.json
       status: Active
   Optional agents:
+    - role: Project Manager
+      name: Roo Project Manager
+      slug: roo-project-manager
+      description: "Oversees project timelines, resources, and deliverables. Ensures all agents are aligned with project goals. Uses the memory system to track progress and updates."
+      details: roo-project-manager-details.json
+      status: Active
+    - role: Project Planner
+      name: Roo Project Planner
+      slug: roo-project-planner
+      description: "Creates detailed project plans, timelines, and resource allocation. Collaborates with the project manager to ensure all tasks are well-defined and scheduled. Uses the memory system."
+      details: roo-project-planner-details.json
+      status: Active
     - role: Editor
       name: Roo Editor
       slug: roo-editor
