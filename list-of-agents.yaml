@@ -103,3 +103,9 @@ Agents list:
       description: "Specialist in finding and managing images for content creation. Searches for copyright-free, commercial license-free, or public domain images. Maintains an inventory of selected images with details."
       details: roo-photoeditor-details.json
       status: Active
+    - role: Data Analyst
+      name: Roo Data Analyst
+      slug: roo-data-analyst
+      description: "An expert in analyzing data using various tools and techniques, including Python scripts, Bash commands, and command-line tools like `q`."
+      details: roo-data-analyst-details.json
+      status: Active
