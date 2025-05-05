@@ -8,26 +8,30 @@ This file is hosted at github and can be updated as follows:
   ```bash
     curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.knowledgebase/table-of-contents.md > .knowledgebase/table-of-contents.md
    ```
-   # List of knowledgebase files
 
-   - `table-of-contents.md`: An overview and quick access to all knowledgebase files.
+# List of Knowledgebase Files
 
-   - Filename:`install-remote-chrome-browser.md`
-    - Description: Instructions for installing a remote Chrome browser. To be used when the local Chrome browser is not available and when browser_install says that it is already installed but it doesn't work, that means these instructions are required..
-    - Errors for which this solution is applicable:
-      - `Error: browserType.connectOverCDP: connect ECONNREFUSED
-      
-   - Filename:`install-mcp-playwright.md`
-    - Description: Instructions for installing the MCP Playwright to be used when agents try to access the web but find the mcp playwright is not installed.
-    - Errors for which this solution is applicable:
-      - No playwright server found in the mcp tools
-    
-   - Filename : how-to-start-remote-chrome-instead-of-browser-install.md
-    Instructions on how to start the remote chrome to be used with browser_navigate because "browser install" isn't suitable here.
+## General
 
-    - Filename : astro*.md
-    - Description: Instructions using Astro web development environment. Particularly for Roo Astro Developer.
+- `table-of-contents.md`: An overview and quick access to all knowledgebase files.
 
-  - Filename: data*.md
-  - Description: Help on how to manage data, mostly for the data analyst role, includes how to do SQL queries on .csv files
+## Installation Guides
+
+- `install-remote-chrome-browser.md`: Use this guide if you encounter the error `browserType.connectOverCDP: connect ECONNREFUSED 127.0.0.1:9222`. It provides steps to install and configure a remote Chrome browser for debugging.
+- `install-mcp-playwright.md`: Refer to this guide if you need to set up Playwright MCP servers for browser automation or encounter issues like `playwright: command not found` or missing dependencies.
+
+## Role-Specific Details
+
+### Astro Developer
+- `astro-markdown-setup-guide.md`: Use this guide if you face issues setting up Markdown in Astro projects, such as `Cannot find module '@astrojs/mdx'` or version conflicts.
+- `astro-mdx-integration-guide.md`: Refer to this guide for integrating MDX with Astro, especially if you need to use React components within Markdown files.
+- `astro-research-report.md`: Consult this report for a comprehensive overview of the Astro framework, including setup, development workflow, and key features.
+
+### Data Analyst
+- `data-analysis-accessing-csv-files-with-sql.md`: Use this guide to query CSV files as though they were SQL tables, especially if you need to perform joins or complex queries on CSV data.
+
+## Prompting and Configuration
+
+- `prompting-guide.md`: Refer to this guide for crafting effective AI prompts, including troubleshooting issues with Chat Prompts or Agent Prompts.
+- `puppeter-mcp-server-config.md`: Use this guide if you need to configure Puppeteer MCP servers as an alternative to Playwright or encounter issues with Puppeteer setup.
 
