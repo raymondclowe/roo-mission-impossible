@@ -28,5 +28,6 @@ This file is hosted at github and can be updated as follows:
     - Filename : astro*.md
     - Description: Instructions using Astro web development environment. Particularly for Roo Astro Developer.
 
-
+  - Filename: data*.md
+  - Description: Help on how to manage data, mostly for the data analyst role, includes how to do SQL queries on .csv files
 
