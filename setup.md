@@ -62,7 +62,7 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 
 4. Save the updated `.roomodes` file and validate its structure.
 
-5. Once all the above is done then DELETE THIS `setup.md` file to avoid instructions being repeated
+
 ---
 
 ## Step 4: Set up the Tech Support agent
@@ -88,3 +88,7 @@ Setup complete! The 'jim-phelps' mode has been successfully configured in the .r
 ```
 
 Then switch to the `jim-phelps` mode to begin task delegation.
+
+## Finally
+
+Once all the above is done then DELETE THIS `setup.md` file to avoid instructions being repeated
