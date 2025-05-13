@@ -70,8 +70,8 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 1. Download the latest `tech-support-details` `.json` and `.md` files using the following commands:
 
 ```bash
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.json > tech-support-details.json
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.md > tech-support-details.md
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/roo-tech-support-details.json > tech-support-details.json
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/roo-tech-support-details.md > tech-support-details.md
 ```
 2. Check for the existence of a `.roomodes` file:
    - If the file does not exist, create it by copying over the tech-support-details.json file to by going `cp tech-support-details.json .roomodes` 
