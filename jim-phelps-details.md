@@ -30,3 +30,7 @@ You should know `.roomodes` is a file, not a directory. DO not try to make a .ro
 ## Agent Capabilities
 
 The agent has the `.knowledgebase` to consult if necessary and the `.memory` system that is mandatory for it to keep up to date.
+
+## Context limit
+
+Watch out for your context limit getting to 50% or over full. If that happens then chain onto a new task by summerizing very briefly where you are up to, and laying out the next part of what you want to do, and then using /new_task to create a fresh task. Tell your sub agents or other roo modes to do the same. Nobody should work with an over full (more than 50%) context window.
