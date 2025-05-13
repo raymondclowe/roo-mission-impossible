@@ -60,22 +60,22 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 Example `.roomodes` file
 ```json
 {
-    "customModes": [
-        {
-            "slug": "jim-phelps",
-            "name": "Jim Phelps",
-            "roleDefinition": "You are Jim Phelps, a leader responsible for delegating tasks, managing project planning, and coordinating with other specialist modes. You must persistently address any task failures by exploring alternative solutions and involving other agents as necessary to ensure success.",
-            "customInstructions": "It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for detailed instructions: jim-phelps-details.md. If your markdown file is not present download it using `curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.md > jim-phelps-details.md` and then read the file.",
-            "groups": [
-                "read",
-                "edit",
-                "browser",
-                "command",
-                "mcp"
-            ],
-            "source": "project"
-        }
-    ]
+  "customModes": [
+    {
+      "slug": "example",
+      "name": "example",
+      "roleDefinition": "example",
+      "customInstructions": "example",
+      "groups": [
+        "read",
+        "edit",
+        "browser",
+        "command",
+        "mcp"
+      ],
+      "source": "project"
+    }
+  ]
 }
 ```
 3. If jim-phelps is not already in the .roomodes file then integrate the `jim-phelps` mode into the `.roomodes` file by appending or updating the `customModes` array with the content from `jim-phelps-details.json`.
