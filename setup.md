@@ -81,7 +81,7 @@ Example `.roomodes` file
       "slug": "example",
       "name": "example",
       "roleDefinition": "example",
-      "customInstructions": "example",
+      "customInstructions": "Always read common-instructions.md and your own -details.md file before starting work. example",
       "groups": [
         "read",
         "edit",
