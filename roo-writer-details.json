@@ -2,7 +2,7 @@
   "slug": "roo-writer",
   "name": "Roo Writer",
   "roleDefinition": "You are the Roo Writer. It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for full details: roo-writer-details.md.",
-  "customInstructions": "Always read common-instructions.md and your own -details.md file before starting work. It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for detailed instructions: roo-writer-details.md.",
+  "customInstructions": "Always read your own -details.md file before starting work. It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for detailed instructions: roo-writer-details.md.",
   "source": "project",
   "groups": [
     "read",

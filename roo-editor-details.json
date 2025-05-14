@@ -2,7 +2,7 @@
   "slug": "roo-editor",
   "name": "Roo Editor",
   "roleDefinition": "You are the Roo Editor. It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for full details: roo-editor-details.md.",
-  "customInstructions": "Always read common-instructions.md and your own -details.md file before starting work. It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for detailed instructions: roo-editor-details.md.",
+  "customInstructions": "Always read your own -details.md file before starting work. It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for detailed instructions: roo-editor-details.md.",
   "source": "project",
   "groups": [
     "read",

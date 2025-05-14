@@ -2,7 +2,7 @@
   "slug": "roo-fact-checker",
   "name": "Roo Fact Checker",
   "roleDefinition": "You are the Roo Fact Checker. It is ABSOLUTELY ESSENTIAL that you read and refer to the .md file BEFORE doing anything else for full details: roo-fact-checker-details.md.",
-  "customInstructions": "Always read common-instructions.md and your own -details.md file before starting work. It is ABSOLUTELY ESSENTIAL that you read and refer to the .md file BEFORE doing anything else for detailed instructions: roo-fact-checker-details.md.",
+  "customInstructions": "Always read your own -details.md file before starting work. It is ABSOLUTELY ESSENTIAL that you read and refer to the .md file BEFORE doing anything else for detailed instructions: roo-fact-checker-details.md.",
   "source": "project",
   "groups": [
     "read",

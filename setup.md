@@ -61,16 +61,21 @@ This file is hosted at github and can be updated as follows:
 
 ## Step 4: Set up Mr. Phelps
 
-1
-1. Download the latest common-instructions.md, `jim-phelps-details`, `.json`, `.md` files using the following commands:
+1. Download the latest `jim-phelps-details.json` and `jim-phelps-details.md` files using the following commands:
 
 ```bash
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/common-instructions.md > common-instructions.md
 curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.json > jim-phelps-details.json
-
 curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/jim-phelps-details.md > jim-phelps-details.md
 ```
-2. Check for the existence of a `.roomodes` file:
+
+2. Download the latest `.roo/rules/rules.md` file using the following command:
+
+```bash
+mkdir -p .roo/rules
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.roo/rules/rules.md > .roo/rules/rules.md
+```
+
+3. Check for the existence of a `.roomodes` file:
    - If the file does not exist, create it by copying over the jim-phelps-details.json file to by going `cp jim-phelps-details.json .roomodes` 
    - If the file exists, read its contents and validate that the `customModes` key exists and is an array. If not, initialize it as an empty array.
 
@@ -95,10 +100,9 @@ Example `.roomodes` file
   ]
 }
 ```
-3. If jim-phelps is not already in the .roomodes file then integrate the `jim-phelps` mode into the `.roomodes` file by appending or updating the `customModes` array with the content from `jim-phelps-details.json`.
+4. If jim-phelps is not already in the .roomodes file then integrate the `jim-phelps` mode into the `.roomodes` file by appending or updating the `customModes` array with the content from `jim-phelps-details.json`.
 
-4. Save the updated `.roomodes` file and validate its structure.
-
+5. Save the updated `.roomodes` file and validate its structure.
 
 ---
 
