@@ -32,11 +32,13 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
    - `state.md`
    - `learnings.md`
    - `references.md`
+   - `readme.md`
 
 For example:
 
 ```bash
 curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.memory/table-of-contents.md > .memory/table-of-contents.md
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.memory/readme.md > .memory/readme.md
 ```
 
 Repeat for the other files.
@@ -52,12 +54,12 @@ If the `.knowledgebase` folder already exists, skip this step and proceed to Ste
 This file is hosted at github and can be updated as follows:
 
   - Create a hidden folder named `.knowledgebase` at the root of the project.
-  - Download the `table-of-contents.md` file into the `.knowledgebase` folder using the following command:
+  - Download the `table-of-contents.md` and `readme.md` files into the `.knowledgebase` folder using the following commands:
 
   ```bash
     curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.knowledgebase/table-of-contents.md > .knowledgebase/table-of-contents.md
+    curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.knowledgebase/readme.md > .knowledgebase/readme.md
    ```
-
 
 ## Step 4: Set up Mr. Phelps
 
