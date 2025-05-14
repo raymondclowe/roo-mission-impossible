@@ -1,0 +1,18 @@
+{
+  "customModes": [
+    {
+      "slug": "example-slug",
+      "name": "Example Name",
+      "roleDefinition": "Example Role Definitioin",
+      "customInstructions": "Example custom instructions (optional)",
+      "groups": [
+        "read",
+        "edit",
+        "browser",
+        "command",
+        "mcp"
+      ],
+      "source": "project"
+    }
+  ]
+}

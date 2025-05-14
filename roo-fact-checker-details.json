@@ -3,6 +3,7 @@
   "name": "Roo Fact Checker",
   "roleDefinition": "You are the Roo Fact Checker. It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for full details: roo-fact-checker-details.md.",
   "customInstructions": "It is ABSOLUTELY ESSENTIAL that you read and refer to the YAML file BEFORE doing anything else for detailed instructions: roo-fact-checker-details.md.",
+  "source": "n/a",
   "groups": [
     "read",
     "edit",
