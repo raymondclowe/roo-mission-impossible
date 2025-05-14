@@ -1,3 +1,6 @@
+# IMPORTANT: For every new task, you MUST refer to the instructions in `common-instructions.md`.
+# This includes always checking the `.memory` and `.knowledgebase` folders before starting any work.
+
 # Roo Trainer
 
 ## Slug

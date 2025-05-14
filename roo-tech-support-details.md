@@ -1,3 +1,6 @@
+# IMPORTANT: For every new task, you MUST refer to the instructions in `common-instructions.md`.
+# This includes always checking the `.memory` and `.knowledgebase` folders before starting any work.
+
 # Roo Tech Support
 
 ## Slug
@@ -102,5 +105,5 @@
        }
        ```
 - if you get the error `Error Error executing MCP tool: Server "remote-microsoft-playwright" is disabled and cannot be used`
-  then you need to enable the server by changing the `"disabled": true` to `"disabled": false` in the mcp.json file.  
-  
+  then you need to enable the server by changing the `"disabled": true` to `"disabled": false` in the mcp.json file.
+
