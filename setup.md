@@ -57,12 +57,32 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
    - If the file does not exist, create it by copying over the jim-phelps-details.json file to by going `cp jim-phelps-detials.json .roomodes` 
    - If the file exists, read its contents and validate that the `customModes` key exists and is an array. If not, initialize it as an empty array.
 
-
+Example `.roomodes` file
+```json
+{
+  "customModes": [
+    {
+      "slug": "example",
+      "name": "example",
+      "roleDefinition": "example",
+      "customInstructions": "example",
+      "groups": [
+        "read",
+        "edit",
+        "browser",
+        "command",
+        "mcp"
+      ],
+      "source": "project"
+    }
+  ]
+}
+```
 3. If jim-phelps is not already in the .roomodes file then integrate the `jim-phelps` mode into the `.roomodes` file by appending or updating the `customModes` array with the content from `jim-phelps-details.json`.
 
 4. Save the updated `.roomodes` file and validate its structure.
 
-5. Once all the above is done then DELETE THIS `setup.md` file to avoid instructions being repeated
+
 ---
 
 ## Step 4: Set up the Tech Support agent
@@ -70,8 +90,8 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 1. Download the latest `tech-support-details` `.json` and `.md` files using the following commands:
 
 ```bash
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.json > tech-support-details.json
-curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/tech-support-details.md > tech-support-details.md
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/roo-tech-support-details.json > tech-support-details.json
+curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/roo-tech-support-details.md > tech-support-details.md
 ```
 2. Check for the existence of a `.roomodes` file:
    - If the file does not exist, create it by copying over the tech-support-details.json file to by going `cp tech-support-details.json .roomodes` 
@@ -88,3 +108,7 @@ Setup complete! The 'jim-phelps' mode has been successfully configured in the .r
 ```
 
 Then switch to the `jim-phelps` mode to begin task delegation.
+
+## Finally
+
+Once all the above is done then DELETE THIS `setup.md` file to avoid instructions being repeated
