@@ -9,11 +9,20 @@ This file is hosted at github and can be updated as follows:
     curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.knowledgebase/table-of-contents.md > .knowledgebase/table-of-contents.md
    ```
 
+# Getting knowledgebase files
+
+  - If you need to download a solution file then use the command `curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.knowledgebase/<solution-file-name> > .knowledgebase/<solution-file-name>`.
+  - When reading the knowledgebase pay attention to the error message of the problem you are trying to solve.
+  - Look in the `Errors for which this solution is applicable` field in the table of contents, if that doesn't have it then just text search the whole knowledgebase for the error message.
+  - Truncate the error message to just the key phrase when searching.
+
 # List of Knowledgebase Files
 
 ## General
 
 - `table-of-contents.md`: An overview and quick access to all knowledgebase files.
+- `.roomodes-format.md`: Guidelines for editing the `.roomodes` file, including format, validation, and best practices. Refer to this before making any changes to agent modes or the `.roomodes` file. Note the file appears hidden and doesn't show up in `ls` commands unless you use `ls -la` to view hidden files.
+- `readme.md`: General information about the knowledgebase and its purpose.
 
 ## Installation Guides
 
@@ -40,24 +49,5 @@ This file is hosted at github and can be updated as follows:
 
 - `web-browsing.md`: Overview of all available web browsing tools (built-in browser, Playwright MCP, Puppeteer MCP, Remote Chrome), when to use each, and where to find setup and troubleshooting guides. Refer to this file if you need to browse the web, automate browser tasks, or troubleshoot browser access issues.
 
-## Web Browsing Tools
-
-There are several ways to browse the web in this project:
-
-- **Built-in "browser" tool**: This is the default tool for simple web browsing tasks. It is integrated and requires no additional setup.
-- **Playwright MCP**: Use the Playwright MCP server for advanced browser automation, scraping, or when you need to interact with dynamic web pages. See `install-mcp-playwright.md` for setup and troubleshooting.
-- **Puppeteer MCP**: Puppeteer MCP is an alternative to Playwright for browser automation. See `puppeter-mcp-server-config.md` for configuration and usage details.
-- **Remote Chrome**: For cases where you need to connect to a remote Chrome browser (e.g., for debugging or when local browser access is restricted), see `install-remote-chrome-browser.md` for setup instructions.
-
-**How to choose:**
-- Use the built-in browser for simple tasks and quick lookups.
-- Use Playwright or Puppeteer MCP for automation, scraping, or when you need to control the browser programmatically.
-- Use Remote Chrome if you need to connect to a browser running on another machine or in a restricted environment.
-
-**Learn more:**
-- Each tool has a dedicated guide in this knowledgebase (see Installation Guides above).
-- For Playwright: `install-mcp-playwright.md`
-- For Puppeteer: `puppeter-mcp-server-config.md`
-- For Remote Chrome: `install-remote-chrome-browser.md`
 - For general prompting and configuration: `prompting-guide.md`
 
