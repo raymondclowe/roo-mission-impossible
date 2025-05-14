@@ -43,7 +43,23 @@ Repeat for the other files.
 
 ---
 
-## Step 3: Set up Mr. Phelps
+## Step 3: Set up the Project Knowledge Base
+
+If the `.knowledgebase` folder already exists, skip this step and proceed to Step 4 after deleting this step from this file.
+
+# Knowledgebase
+
+This file is hosted at github and can be updated as follows:
+
+  - Create a hidden folder named `.knowledgebase` at the root of the project.
+  - Download the `table-of-contents.md` file into the `.knowledgebase` folder using the following command:
+
+  ```bash
+    curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/.knowledgebase/table-of-contents.md > .knowledgebase/table-of-contents.md
+   ```
+
+
+## Step 4: Set up Mr. Phelps
 
 1
 1. Download the latest `jim-phelps-details` `.json` and `.md` files using the following commands:
@@ -85,7 +101,7 @@ Example `.roomodes` file
 
 ---
 
-## Step 4: Set up the Tech Support agent
+## Step 5: Set up the Tech Support agent
 
 1. Download the latest `roo-tech-support-details` `.json` and `.md` files using the following commands:
 
@@ -99,7 +115,7 @@ curl https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/h
 3. If tech-support is not already in the .roomodes file then integrate the `tech-support` mode into the `.roomodes` file by appending or updating the `customModes` array with the content from `roo-tech-support-details.json`.
 4. Save the updated `.roomodes` file and validate its structure.
 
-## Step 5: Confirm Setup Completion
+## Step 6: Confirm Setup Completion
 
 Output a message to the user indicating that the setup is complete. For example:
 
@@ -107,7 +123,7 @@ Output a message to the user indicating that the setup is complete. For example:
 Setup complete! The 'jim-phelps' mode has been successfully configured in the .roomodes file and awaits your instructions.
 ```
 
-Then switch to the `jim-phelps` mode to begin task delegation.
+Then change mode role to the `jim-phelps` agent mode role to begin task delegation.
 
 ## Finally
 
