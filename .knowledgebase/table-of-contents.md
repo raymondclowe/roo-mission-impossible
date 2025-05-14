@@ -34,4 +34,5 @@ This file is hosted at github and can be updated as follows:
 
 - `prompting-guide.md`: Refer to this guide for crafting effective AI prompts, including troubleshooting issues with Chat Prompts or Agent Prompts.
 - `puppeter-mcp-server-config.md`: Use this guide if you need to configure Puppeteer MCP servers as an alternative to Playwright or encounter issues with Puppeteer setup.
+- `.roomodes-format.md`: How to safely edit the .roomodes file (format, validation, and best practices)
 
