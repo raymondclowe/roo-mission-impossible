@@ -36,3 +36,28 @@ This file is hosted at github and can be updated as follows:
 - `puppeter-mcp-server-config.md`: Use this guide if you need to configure Puppeteer MCP servers as an alternative to Playwright or encounter issues with Puppeteer setup.
 - `.roomodes-format.md`: How to safely edit the .roomodes file (format, validation, and best practices)
 
+## Web Browsing
+
+- `web-browsing.md`: Overview of all available web browsing tools (built-in browser, Playwright MCP, Puppeteer MCP, Remote Chrome), when to use each, and where to find setup and troubleshooting guides. Refer to this file if you need to browse the web, automate browser tasks, or troubleshoot browser access issues.
+
+## Web Browsing Tools
+
+There are several ways to browse the web in this project:
+
+- **Built-in "browser" tool**: This is the default tool for simple web browsing tasks. It is integrated and requires no additional setup.
+- **Playwright MCP**: Use the Playwright MCP server for advanced browser automation, scraping, or when you need to interact with dynamic web pages. See `install-mcp-playwright.md` for setup and troubleshooting.
+- **Puppeteer MCP**: Puppeteer MCP is an alternative to Playwright for browser automation. See `puppeter-mcp-server-config.md` for configuration and usage details.
+- **Remote Chrome**: For cases where you need to connect to a remote Chrome browser (e.g., for debugging or when local browser access is restricted), see `install-remote-chrome-browser.md` for setup instructions.
+
+**How to choose:**
+- Use the built-in browser for simple tasks and quick lookups.
+- Use Playwright or Puppeteer MCP for automation, scraping, or when you need to control the browser programmatically.
+- Use Remote Chrome if you need to connect to a browser running on another machine or in a restricted environment.
+
+**Learn more:**
+- Each tool has a dedicated guide in this knowledgebase (see Installation Guides above).
+- For Playwright: `install-mcp-playwright.md`
+- For Puppeteer: `puppeter-mcp-server-config.md`
+- For Remote Chrome: `install-remote-chrome-browser.md`
+- For general prompting and configuration: `prompting-guide.md`
+
