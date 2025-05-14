@@ -42,27 +42,31 @@ sudo apt-get install -y ./google-chrome-stable_current_amd64.deb
 
   - Check your list of MCP servers to see if remote-microsoft-playwright already exists, if not then install it by adding this to the mcp.json file in this folder:
     ```json
-
-    "remote-microsoft-playwright": {
-      "command": "npx",
-      "args": [
-        "@playwright/mcp@latest",
-        "--cdp-endpoint",
-        "http://127.0.0.1:9222"
-      ],
-      "disabled": true,
-      "alwaysAllow": [
-        "browser_navigate",
-        "browser_type",
-        "navigate",
-        "browser_click",
-        "browser_snapshot",
-        "browser_network_requests",
-        "browser_scroll_down",
-        "browser_press_key"
-      ]
+{
+    "mcpServers": {
+        "remote-microsoft-playwright": {
+            "command": "npx",
+            "args": [
+                "@playwright/mcp@latest",
+                "--cdp-endpoint",
+                "http://127.0.0.1:9222"
+            ],
+            "disabled": false,
+            "alwaysAllow": [
+                "browser_navigate",
+                "browser_type",
+                "navigate",
+                "browser_click",
+                "browser_snapshot",
+                "browser_network_requests",
+                "browser_scroll_down",
+                "browser_press_key"
+            ]
+        }
     }
+}
     ```
+    Append it to any existing mcpServers section in the `.roo/mcp.json` file. If the section does not exist, create it.
 - Ensure the MCP Playwright configuration in `.roo/mcp.json` uses the following `--cdp-endpoint`:
   ```json
   "--cdp-endpoint": "http://127.0.0.1:9222"
