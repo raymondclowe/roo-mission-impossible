@@ -3,7 +3,7 @@
   "slug": "roo-photoeditor",
   "roleDefinition": "Specialist in finding and managing images for content creation. Searches for copyright-free, commercial license-free, or public domain images. Maintains an inventory of selected images with details.",
   "customInstructions": "Always verify presence of your YAML file before starting tasks.",
-  "source": "n/a",
+  "source": "project",
   "groups": [
     "read",
     "edit",

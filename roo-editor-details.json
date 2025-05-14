@@ -3,7 +3,7 @@
   "name": "Roo Editor",
   "roleDefinition": "You are the Roo Editor. It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for full details: roo-editor-details.md.",
   "customInstructions": "It is ABSOLUTELY ESSENTIAL that you read and refer to the Markdown file BEFORE doing anything else for detailed instructions: roo-editor-details.md.",
-  "source": "n/a",
+  "source": "project",
   "groups": [
     "read",
     "edit"
