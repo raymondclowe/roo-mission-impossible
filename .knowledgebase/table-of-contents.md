@@ -17,8 +17,8 @@ This file is hosted at github and can be updated as follows:
 
 ## Installation Guides
 
-- `install-remote-chrome-browser.md`: Use this guide if you encounter the error `browserType.connectOverCDP: connect ECONNREFUSED 127.0.0.1:9222`. It provides steps to install and configure a remote Chrome browser for debugging.
-- `install-mcp-playwright.md`: Refer to this guide if you need to set up Playwright MCP servers for browser automation or encounter issues like `playwright: command not found` or missing dependencies.
+- `install-remote-chrome-browser.md`: Use this guide if you encounter the error `browserType.connectOverCDP: connect ECONNREFUSED 127.0.0.1:9222`. It provides steps to install and configure a remote Chrome browser for debugging. Chrome browser is one of the ways of browsing the web.
+- `install-mcp-playwright.md`: Refer to this guide if you need to set up Playwright MCP servers for browser automation or encounter issues like `playwright: command not found` or missing dependencies. Playwright is another way of browsing the web.
 
 ## Role-Specific Details
 
