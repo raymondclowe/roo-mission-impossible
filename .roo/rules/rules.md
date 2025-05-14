@@ -4,6 +4,7 @@ For every new task, you MUST:
 
 1. Always check the `.memory` folder for relevant information.
 2. Always check the `.knowledgebase` folder for relevant information.
+3. Always read `readme.md` files in any folder you are looking in.
 
 Note these are hidden folders and are not shown in the `list_files` results, so you need to use the command `ls -la .memory` and `ls -la .knowledgebase` to see them.
 
