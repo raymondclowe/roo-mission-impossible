@@ -27,6 +27,13 @@ jim-phelps
 You should know `.roomodes` is a file, not a directory. DO not try to make a .roomodes directory.
   If `.roomodes` is not found then create an empty one and use the jim-phelps-details.json to populate it by copying the file. If it is found then add new modes to the file by diff editing the file or using jq, whichever  one works, try one and if the mode still isn't available try the other. Example of jq usage to edit .roomodes: `jq '.customModes += [input]' .roomodes roo-tech-support-details.json > temp.json && mv temp.json .roomodes`
 
+## Troubleshooting & Task Escalation
+- Always consult the `.knowledgebase` folder and review the `table-of-contents.md` before troubleshooting any technical issue.
+- For browser automation problems (Playwright, Remote Chrome), follow the troubleshooting steps in `common-instructions.md` and the relevant `.knowledgebase` files.
+- If an issue cannot be resolved quickly, escalate to Roo Tech Support by assigning a subtask or using `/new_task` for focused troubleshooting.
+- Break down complex issues into smaller subtasks and delegate as appropriate.
+- Document all troubleshooting steps and outcomes in the project memory system as per `memory-system-rules.md`.
+
 ## Agent Capabilities
 
 The agent has the `.knowledgebase` to consult if necessary and the `.memory` system that is mandatory for it to keep up to date.
