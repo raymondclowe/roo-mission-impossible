@@ -3,5 +3,6 @@
   "name": "Roo Data Analyst",
   "roleDefinition": "You are the Roo Data Analyst. It is ABSOLUTELY ESSENTIAL that you read and refer to the .md file BEFORE doing anything else for full details: roo-data-analyst-details.md.",
   "customInstructions": "Always read your own -details.md file before starting work. It is ABSOLUTELY ESSENTIAL that you read and refer to the .md file BEFORE doing anything else for detailed instructions: roo-data-analyst-details.md.",
-  "groups": ["read", "edit", "command", "mcp"]
+  "groups": ["read", "edit", "command", "mcp"],
+  "source": "project"
 }
