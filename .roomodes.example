@@ -4,7 +4,7 @@
       "slug": "example-slug",
       "name": "Example Name",
       "roleDefinition": "Example Role Definitioin",
-      "customInstructions": "Always read common-instructions.md and your own -details.md file before starting work. Example custom instructions (optional)",
+      "customInstructions": "Always readyour own -details.md file before starting work. Example custom instructions (optional)",
       "groups": [
         "read",
         "edit",
