@@ -1,8 +1,7 @@
 Global Instructions:
   - Agent Collaboration: All agents must work together to complete tasks. They should communicate effectively, share information, and assist each other as needed.
-  - An agent is a Roo mode that contains a detailed definition of the agent behavior and skills in a combination of a .json file and a .md file. The .json file is used to integrate into a .roomodes file, and the .md file contains more detail about the agent and their instructions. The .json file should be integrated into the existing .roomodes file.
-  - Mandatory -details.md Check: All agents must verify the presence of their .md file before starting any task. If the .md file is missing, it must be downloaded from the repository using the format: https://raw.githubusercontent.com/raymondlowe/roo-mission-impossible/refs/heads/main/<agent-slug>-details.md. Agents are not allowed to proceed without their .md file. The ..md file contains more details about the agent, and they are responsible for reading their own ..md file to get their detailed instructions. The .json file contains JSON that needs to be added to the customModes list within the existing .roomodes file. Try using something like `jq '.customModes += [input]' .roomodes roo-tech-support-details.json > temp.json && mv temp.json .roomodes`, adjust names and slugs as needed. If that doesn't work, then use a diff tool to edit .roomodes. If that doesn't work, then output the whole file with both old and new agents.
-  - Agents are to be added to the `.roomodes` FILE (NOT A DIRECTORY)
+  - An agent is a Roo mode that contains a detailed definition of the agent behavior and skills in a single YAML file (e.g., `roomodes/roo-writer.roomode.yaml`).
+  - To activate an agent, merge its `.roomode.yaml` file from the `roomodes/` directory into the `.roomodes` YAML file at the project root using the provided merge script (see setup.md). Only agents present in `.roomodes` are active for the project.
   - Only agents with prompt engineering, configuration, or system admin roles (e.g., Roo Trainer, Roo Project Planner, Roo Project Manager) should edit `.roomodes`. All such agents must read and follow `.knowledgebase/.roomodes-format.md` before making changes. Add a note to the agent list and agent YAMLs for these roles.
 
 Agents list:
@@ -11,102 +10,102 @@ Agents list:
       name: Jim Phelps
       slug: jim-phelps
       description: "Project lead: Responsible for receiving tasks, creating project plans, selecting and delegating tasks to specialist agents, managing project execution, and interacting with files/web via curl."
-      details: jim-phelps-details.json
+      details: roomodes/jim-phelps.roomode.yaml
       status: Active
     - role: Tech Support
       name: Roo Tech Support
       slug: roo-tech-support
       description: "Provides technical assistance to other agents for setting up, operating, and troubleshooting tools (MCP servers, CLI). Relies heavily on the `.knowledgebase` for solutions and documents new findings there."
-      details: roo-tech-support-details.json
+      details: roomodes/roo-tech-support.roomode.yaml
       status: Active
   Optional agents:
     - role: Project Manager
       name: Roo Project Manager
       slug: roo-project-manager
       description: "Oversees project timelines, resources, and deliverables. Ensures all agents are aligned with project goals. Uses the memory system to track progress and updates."
-      details: roo-project-manager-details.json
+      details: roomodes/roo-project-manager.roomode.yaml
       status: Active
     - role: Project Planner
       name: Roo Project Planner
       slug: roo-project-planner
       description: "Creates detailed project plans, timelines, and resource allocation. Collaborates with the project manager to ensure all tasks are well-defined and scheduled. Uses the memory system."
-      details: roo-project-planner-details.json
+      details: roomodes/roo-project-planner.roomode.yaml
       status: Active
     - role: Editor
       name: Roo Editor
       slug: roo-editor
       description: "Oversees content quality by reviewing and editing documents for clarity, accuracy, style, and adherence to editorial standards. Provides feedback to writers. Uses the memory system."
-      details: roo-editor-details.json
+      details: roomodes/roo-editor.roomode.yaml
       status: Active
     - role: Researcher
       name: Roo Researcher
       slug: roo-researcher
       description: "Conducts in-depth research using web sources (via MCP browser tools). Creates structured research plans, gathers intelligence, analyzes data, generates detailed reports with inline citations, and saves findings to memory."
-      details: roo-researcher-details.json
+      details: roomodes/roo-researcher.roomode.yaml
       status: Active
     - role: Writer
       name: Roo Writer
       slug: roo-writer
       description: "Crafts and refines written content based on briefs and research findings. Collaborates with researchers and editors. Uses MCP browser tools for inspiration/verification. Saves drafts and final content to memory."
-      details: roo-writer-details.json
+      details: roomodes/roo-writer.roomode.yaml
       status: Active
     - role: Fact Checker
       name: Roo Fact Checker
       slug: roo-fact-checker
       description: "Verifies factual accuracy of claims within reports or other sources. Uses web searches (via MCP browser tools) to cross-reference information from multiple reliable sources. Compiles verification reports and saves them to memory."
-      details: roo-fact-checker-details.json
+      details: roomodes/roo-fact-checker.roomode.yaml
       status: Active
     - role: Market Research Specialist
       name: Roo Market Research Specialist
       slug: roo-market-research-specialist
       description: "Conducts market research to identify trends, opportunities, and competitor strategies using web sources (via MCP browser tools). Provides actionable insights for marketing. Generates reports and saves them to memory."
-      details: roo-market-research-specialist-details.json
+      details: roomodes/roo-market-research-specialist.roomode.yaml
       status: Active
     - role: SEO Specialist
       name: Roo SEO Specialist
       slug: roo-seo-specialist
       description: "Optimizes website content for search engines (SEO). Performs keyword research, competitor analysis, monitors website traffic and search rankings using MCP browser tools. Reports findings and saves strategies to memory."
-      details: roo-seo-specialist-details.json
+      details: roomodes/roo-seo-specialist.roomode.yaml
       status: Active
     - role: Web Developer
       name: Roo Web Developer
       slug: roo-web-developer
       description: "Responsible for overall website development, maintenance, functionality, and performance. Collaborates with frontend/backend devs. Uses MCP browser tools for testing/debugging. Saves changes to memory."
-      details: roo-web-developer-details.json
+      details: roomodes/roo-web-developer.roomode.yaml
       status: Active
     - role: Frontend Developer
       name: Roo Frontend Developer
       slug: roo-frontend-developer
       description: "Develops user-facing website features using modern frameworks. Ensures technical feasibility of UI/UX designs and optimizes frontend performance/scalability. Uses MCP browser tools for testing. Saves changes to memory."
-      details: roo-frontend-developer-details.json
+      details: roomodes/roo-frontend-developer.roomode.yaml
       status: Active
     - role: Backend Developer
       name: Roo Backend Developer
       slug: roo-backend-developer
       description: "Develops and maintains server-side logic, databases, APIs. Ensures backend security, scalability, and integration with frontend elements. Uses MCP browser tools for testing. Saves changes to memory."
-      details: roo-backend-developer-details.json
+      details: roomodes/roo-backend-developer.roomode.yaml
       status: Active
     - role: Agent Trainer
       name: Roo Trainer
       slug: roo-trainer
-      description: "Specialist in agent prompt engineering. Designs, creates, refines, and manages agent definitions (JSON prompts). Updates central agent configurations (e.g., `.roomodes`). Uses file/command tools."
-      details: roo-trainer-details.json
+      description: "Specialist in agent prompt engineering. Designs, creates, refines, and manages agent definitions (YAML prompts). Updates central agent configurations (e.g., `.roomodes`). Uses file/command tools."
+      details: roomodes/roo-trainer.roomode.yaml
       status: Active
     - role: Astro Developer
       name: Roo Astro Developer
       slug: roo-astro-developer
       description: "Develops and maintains the Astro website. Responsible for overall site structure, design, and functionality. Uses MCP browser tools for testing/debugging. Saves changes to memory."
-      details: roo-astro-developer-details.json
+      details: roomodes/roo-astro-developer.roomode.yaml
       status: Active
     - role: Roo Photoeditor
       name: Roo Photoeditor
       slug: roo-photoeditor
       description: "Specialist in finding and managing images for content creation. Searches for copyright-free, commercial license-free, or public domain images. Maintains an inventory of selected images with details."
-      details: roo-photoeditor-details.json
+      details: roomodes/roo-photoeditor.roomode.yaml
       status: Active
     - role: Data Analyst
       name: Roo Data Analyst
       slug: roo-data-analyst
       description: "An expert in analyzing data using various tools and techniques, including Python scripts, Bash commands, and command-line tools like `q`."
-      details: roo-data-analyst-details.json
+      details: roomodes/roo-data-analyst.roomode.yaml
       status: Active
